@@ -1,9 +1,10 @@
 # CP1406-A2-G6
 
 Group designation: G6
+
 Group members:  Bonnie Gilsenan, Ben Newbould, Harsh Dhadwal & Tyrone Napoli
 
-This repo contains a Group Website Project for course CP1406 at James Cook Univerity, Cairns.
+This repo contains a Group Website Project for course CP1406 Web Design & Development at James Cook Univerity, Cairns.
 
 The project is to (re)develop a site for the Barrier Reef Orchestra (BRO). The current site is located at URL http://nqorchestra.com.au/.
 
