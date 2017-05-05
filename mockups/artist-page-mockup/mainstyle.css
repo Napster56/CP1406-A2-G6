@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body {
+	background-color: black;
+	background-image: url(images/background01.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center;
+	font-family: "Lato", sans-serif;
+	color: white;
+	font-size: 20px;
+	overflow: hidden;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+a {
+	cursor: pointer;
+}
+
+.contentsection {
+	margin-left: 300px;
+	overflow: visible;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+[class*="col-"] {
+	padding: 20px;
+	float: left;
+	text-align: center;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+	text-align: center;
+}
+
+.col-nav {height: 300px; width: 330px;}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+.alignright {
+	text-align: right;
+	padding-right: 50px;
+}
+.alignleft {
+	text-align: left;
+}
+.aligncenter {
+	text-align: center;
+}
+
+.txtwhite {
+	text-shadow: 2px 2px 5px #000000;
+	font-size: 120%;
+	color: white;
+}
+
+.txtred {
+	color: rgb(116, 0, 62);
+}
+
+.sidenav {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 150px;
+    left: 0px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 20px;
+    text-align: center;
+	overflow: hidden;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    transition: 0.3s;
+    position: absolute;
+}
+
+.navdiv {
+	width: 550px;
+	height: 100%;
+	
+}
+
+.offsetleft {
+	position: absolute;
+	left: -350px;
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: relative;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	background-color: white;
+    width: 300px;
+	height: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.card img {
+	margin: 27px;
+	margin-bottom: 0px;
+}
+
+.cardinfo {
+    padding: 0px;
+	color: rgba(36, 0, 91, 1);
+}
+
+modal {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 1% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
