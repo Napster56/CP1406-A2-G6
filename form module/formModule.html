@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="formValidation.js"></script>
+<script src="eventListeners.js"></script>
+</head>
+
+<body>
+	<form id="signupForm" onsubmit="return validateForm(this)">
+		E-mail: <input type="text" name="email"><br>
+		Password: <input type="password" name="pass"><br>
+		Re-type your Password: <input type="password" name="passValidate"><br>
+		Membership type:
+		<input type="radio" name="mType" value="adult"><label for="adult">Adult</label>
+		<input type="radio" name="mType" value="family"><label for="family">Family</label>
+		<input type="radio" name="mType" value="student"><label for="student">Student</label>
+		<input type="radio" name="mType" value="concession"><label for="concession">Concession</label><br>
+		Title: <input type="text" name="title"><br>
+		Family Name:  <input type="text" name="familyName"><br>
+		Given Names:  <input type="text" name="givenName"><br>
+	  	<div id="familyMembership" style="display:none"> <!-- Remove style attribute when merging with project proper -->
+			Children:<br>
+			1: <input type="text" name="childName1"> DOB: <input type="text" name="childDOB1" placeholder="dd/mm/yyyy"><br>
+			2: <input type="text" name="childName2"> DOB: <input type="text" name="childDOB2" placeholder="dd/mm/yyyy"><br>
+			3: <input type="text" name="childName3"> DOB: <input type="text" name="childDOB3" placeholder="dd/mm/yyyy"><br>
+		</div>
+		Address: <input type="text" name="address"><br>
+		Phone number: <input type="text" name="phone"> Mobile: <input type="text" name="mobile"><br>
+		Membership Fee: <span id="mCost"></span><br>
+		Payment Options: <!-- Paypal only? --><br>
+		How can you help the orchestra?
+		<select required>
+			<option disabled selected value id="disabledOption" style="display:none">Choose an option</option> <!-- Remove style attribute when merging with project proper -->
+			<option value="playing">Playing in the Orchestra or Ensembles</option>
+			<option value="administration">Management or Administration</option>
+			<option value="support">Player Support</option>
+			<option value="fundraising">Fundraising</option>
+			<option value="marketing">Marketing and Promotion</option>
+			<option value="sponsorship">Sponsorship</option>
+			<option value="publishing">Desktop publishing</option>
+		</select>
+		<div id="playerSignup" style="display:none"> <!-- Remove style attribute when merging with project proper -->
+			Instruments played: <input type="text" name="instruments"><br>
+			Qualifications: <input type="text" name="qualifications"><br>
+			Experience: <textarea rows="4" cols="50" name="experience"></textarea>
+		</div><br><br>
+		<input type="submit" class="signupSubmit" value="Sign up!">
+	</form>
+</body>
+
+</html>
