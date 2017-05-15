@@ -36,6 +36,30 @@ function validateForm(form) { //check fields have stuff and checkbox is ticked
 		errorMessage += "Please enter a given name.\n";
 	}
 	
+	if(document.getElementById("familyMembership").className === ""){
+		var child1 = form.childName1.value;
+		var child2 = form.childName2.value;
+		var child3 = form.childName3.value;
+		if(child1.length > 1){
+			var child1DOB = form.childDOB1.value;
+			if(child1DOB.length < 1){
+				errorMessage += "Please enter a date of birth for " + child1 + ".\n";
+			}
+		}
+		if(child2.length > 1){
+			var child2DOB = form.childDOB2.value;
+			if(child2DOB.length < 1){
+				errorMessage += "Please enter a date of birth for " + child2 + ".\n";
+			}
+		}
+		if(child3.length > 1){
+			var child3DOB = form.childDOB3.value;
+			if(child3DOB.length < 1){
+				errorMessage += "Please enter a date of birth for " + child3 + ".\n";
+			}
+		}
+	}
+	
 	var address = form.address.value;
 	if(address.length < 1) {
 		errorMessage += "Please enter an address.\n";
@@ -48,6 +72,21 @@ function validateForm(form) { //check fields have stuff and checkbox is ticked
 	}
 	if(mobile.length < 1) {
 		errorMessage += "Please enter a mobile phone number.\n";
+	}
+	
+	if(document.getElementById("playerSignup").className === ""){
+		var instruments = form.instruments.value;
+		var qual = form.qualifications.value;
+		var exp = form.experience.value;
+		if(instruments.length < 1) {
+			errorMessage += "Please enter the instruments you can play.\n";
+		}
+		if(qual.length < 1) {
+			errorMessage += "Please enter your qualifications.\n";
+		}
+		if(exp.length < 1) {
+			errorMessage += "Please give us a short blurb of your experience.\n";
+		}
 	}
 	
 	if (errorMessage.length>0){
