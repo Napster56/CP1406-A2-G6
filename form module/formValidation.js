@@ -1,4 +1,23 @@
 // JavaScript Document
+function isNum(txt) {  
+	"use strict";
+	var numV = /[0-9]/;
+	if(txt === "" || txt.match(numV)) {
+		return "";
+	} else {
+		return "Please use only numeric characters for ";
+	}
+}
+
+function isDate(txt) {
+	"use strict";
+	var numV = /[0-9]+\//;
+	if(txt === "" || txt.match(dateV)) {
+		return "";
+	}
+	return "Please enter a date for the DOB of ";
+}
+
 function validateForm(form) { //check fields have stuff and checkbox is ticked
 	"use strict";
 	var errorMessage = "";
@@ -66,12 +85,18 @@ function validateForm(form) { //check fields have stuff and checkbox is ticked
 	}
 	
 	var phone = form.phone.value;
+	var phoneValid = isNum(phone);
 	var mobile = form.mobile.value;
+	var mobileValid = isNum(mobile);
 	if(phone.length < 1) {
 		errorMessage += "Please enter a phone number.\n";
+	} else if (phoneValid !== ""){
+		errorMessage += phoneValid + "your phone number.\n";
 	}
 	if(mobile.length < 1) {
 		errorMessage += "Please enter a mobile phone number.\n";
+	} else if (mobileValid !== ""){
+		errorMessage += mobileValid + "your mobile number.\n";
 	}
 	
 	if(document.getElementById("playerSignup").className === ""){
@@ -96,4 +121,11 @@ function validateForm(form) { //check fields have stuff and checkbox is ticked
 	}
 	alert("Thank you for signing up!");
 	return true;
+}
+
+function feeReset() {
+	"use strict";
+	document.getElementById("mCost").innerHTML = "$30";
+	document.getElementById("familyMembership").className = "hidden";
+	document.getElementById("playerSignup").className = "hidden";
 }

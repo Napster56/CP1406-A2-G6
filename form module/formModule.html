@@ -8,15 +8,15 @@
 </head>
 
 <body>
-	<form name="signupForm" onSubmit="return validateForm(this)">
+	<form name="signupForm" onSubmit="return validateForm(this)" onReset="feeReset()">
 		E-mail: <input type="text" name="email"><br>
 		Password: <input type="password" name="pass"><br>
 		Re-type your Password: <input type="password" name="passValidate"><br>
 		Membership type:
-		<input type="radio" name="mType" value="adult"><label for="adult">Adult</label>
-		<input type="radio" name="mType" value="family"><label for="family">Family</label>
-		<input type="radio" name="mType" value="student"><label for="student">Student</label>
-		<input type="radio" name="mType" value="concession"><label for="concession">Concession</label><br>
+		<input type="radio" name="mType" value="adult" checked="checked" id="adultR"><label for="adultR">Adult</label>
+		<input type="radio" name="mType" value="family" id="familyR"><label for="familyR">Family</label>
+		<input type="radio" name="mType" value="student" id="studentR"><label for="studentR">Student</label>
+		<input type="radio" name="mType" value="concession" id="concessionR"><label for="concessionR">Concession</label><br>
 		Title: <input type="text" name="title"><br>
 		Family Name:  <input type="text" name="familyName"><br>
 		Given Names:  <input type="text" name="givenName"><br>
@@ -28,7 +28,7 @@
 		</div>
 		Address: <input type="text" name="address"><br>
 		Phone number: <input type="text" name="phone"> Mobile: <input type="text" name="mobile"><br>
-		Membership Fee: <span id="mCost"></span><br>
+		Membership Fee: <span id="mCost">$30</span><br>
 		Payment Options: <!-- Paypal only? --><br>
 		How can you help the orchestra?
 		<select name="role" required>
@@ -46,6 +46,7 @@
 			Qualifications: <input type="text" name="qualifications"><br>
 			Experience: <textarea rows="4" cols="50" name="experience"></textarea>
 		</div><br><br>
+		<input type="reset">
 		<input type="submit" class="signupSubmit" value="Sign up!">
 	</form>
 <script src="eventListeners.js"></script>
