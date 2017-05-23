@@ -76,6 +76,12 @@ row::after {
 	color: rgb(116, 0, 62);
 }
 
+.offsetleft {
+	position: absolute;
+	left: -300px;
+
+}
+
 /* regular tags */
 h1 {
 	font-size: 50px;
@@ -87,29 +93,45 @@ a {
 
 /* containers */
 
-.navbar				/* contains navigation bar */
-{
-  height: 100%;
-  width: 240px;
-  position: fixed;
-  top: 150px;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.7);
-  transition: 0.3s;
-  padding-top: 20px;
-  text-align: left;
+					/* contains navigation bar */
+.navbar {
+  	height: 100%;
+  	width: 240px;
+  	position: fixed;
+  	top: 150px;
+  	z-index: 1;
+  	background-color: rgba(0, 0, 0, 0.7);
+  	transition: 0.3s;
+  	padding-top: 20px;
+  	text-align: left;
 	overflow: hidden;
 }
+					/* navigation bar buttons */
+.navbar a {
+  	transition: 0.3s;
+	position: relative;
+	padding: 20px 30px 20px 30px;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	text-shadow: 0 0 10px black;
+	text-align: center;
+	font-family: 'Pacifico', cursive;
+}
 
-.navbtns 			/* contains buttons for navigation bar */
-{
+					 /* contains buttons for navigation bar */
+.navbtns {
 	margin-top: 80px;
 	text-align: left;
 	display: block;
 }
+					/* buttons inside navbtns container */
+.navbtns a {
+	display: block;
+}
 
-.contentsection 	/* contains col's for all page content */
-{
+					/* contains col's for all page content */
+.contentsection {
 	margin-left: 250px;
 	background-color: rgba(0, 0, 0, 0.7);
 	text-align: center;
