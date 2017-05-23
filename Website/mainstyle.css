@@ -150,3 +150,63 @@ a {
 	min-width: 400px;
 	padding-top: 30px;
 }
+
+/* Card and modal for artists info */
+
+									/* Card for artist info */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	background-color: white;
+  width: 300px;
+	height: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.card img {
+	margin: 27px;
+	margin-bottom: 0px;
+}
+
+.cardinfo {
+  padding: 0px;
+	color: rgba(36, 0, 91, 1);
+}
+
+									/* Modal for extra artist info */
+
+modal {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+									/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 1% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+									/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
