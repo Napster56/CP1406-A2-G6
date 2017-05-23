@@ -12,6 +12,7 @@ body {
 	background-color: black;
 	background-repeat: no-repeat;
 	background-size: 100%;
+	background-size: cover;
 	font-family: "Lato", sans-serif;
 	color: white;
 	font-size: 20px;
@@ -25,20 +26,19 @@ body {
 
 [class*="col-"] {
 	padding: 10px;
-	float: left;
 	text-align: center;
-	min-width: 240px;
+	min-width: 320px;
 	display: inline-block;
+	clear: both;
 }
 
 row::after {
 	content: "";
-	clear: both;
-	display:  table;
+	display: table;
 	text-align: center;
 }
 
-.col-nav {width: auto; padding-left: 0px;}
+.col-nav {width: auto; padding-left: 0px; float: left;}
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -54,6 +54,10 @@ row::after {
 
 
 /* classes for alignments */
+
+.colfloat {
+	float: left;
+}
 
 .alignright {
 	text-align: right;
@@ -95,20 +99,20 @@ a {
 
 					/* contains navigation bar */
 .navbar {
-  	height: 100%;
-  	width: 240px;
-  	position: fixed;
-  	top: 150px;
-  	z-index: 1;
-  	background-color: rgba(0, 0, 0, 0.7);
-  	transition: 0.3s;
-  	padding-top: 20px;
-  	text-align: left;
+	height: 100%;
+	width: 240px;
+	position: fixed;
+	top: 190px;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.7);
+	transition: 0.3s;
+	padding-top: 20px;
+	text-align: left;
 	overflow: hidden;
 }
 					/* navigation bar buttons */
 .navbar a {
-  	transition: 0.3s;
+	transition: 0.3s;
 	position: relative;
 	padding: 20px 30px 20px 30px;
 	text-decoration: none;
@@ -142,25 +146,35 @@ a {
 	left: -70px;
 }
 
+					/* header */
+#header {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	margin-top: 0px;
+	padding: none;
+}
+
 					/* contains col's for all page content */
 .contentsection {
 	margin-left: 250px;
+	margin-top: 130px;
 	background-color: rgba(0, 0, 0, 0.7);
 	text-align: center;
 	min-width: 400px;
-	padding-top: 30px;
+	padding: 30px;
 }
 
 /* Card and modal for artists info */
 
 									/* Card for artist info */
 .card {
-  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	background-color: white;
  	width: 300px;
 	height: 500px;
-  	margin: auto;
-  	text-align: center;
+	margin: auto;
+	text-align: center;
 }
 
 .card img {
