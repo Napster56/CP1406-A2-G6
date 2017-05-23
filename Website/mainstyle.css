@@ -119,6 +119,11 @@ a {
 	font-family: 'Pacifico', cursive;
 }
 
+.navbar  a:hover{
+  color: #e1e3da;
+	text-shadow: 0 0 10px white;
+}
+
 					 /* contains buttons for navigation bar */
 .navbtns {
 	margin-top: 80px;
@@ -135,7 +140,6 @@ a {
 	top: 30px;
 	z-index: 1;
 	left: -70px;
-	padding: 20px 20px 500px 10px;
 }
 
 					/* contains col's for all page content */

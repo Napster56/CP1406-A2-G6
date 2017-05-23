@@ -5,7 +5,7 @@
 <title>Barrier Reef Orchestra - Home</title>
 <link href="mainstyle.css" rel="stylesheet" type="text/css">
 </head>
-<body background="images/background01.jpg">
+<body background="images/background01.jpg" onLoad="openNav()">
 
 <!-- Grids for entire page -->
 <div class="row alignleft">
@@ -17,10 +17,10 @@
 
 	<!-- Navigation bar container -->
 	<div class="col-nav">
-		<div id="navBox" class="sidenav">
+		<div id="navBox" class="navbar">
 			<a id="navImg" onclick="closeNav()"><img class="offsetleft" src="images/violinring.png"></a>	<!-- violin image for navigation bar -->
-			<a onmouseover="openNav()" onclick="closeNav()" class="invisiblebtn"></a>		<!-- Invisible button opens nav bar on mouse over -->
-				<div class="btncontainer">
+			<a onmouseover="openNav()" onclick="closeNav()" class="invisiblebtn" style="padding: 20px 20px 500px 10px;"></a>		<!-- Invisible button nav bar -->
+				<div class="navbtns">
 					<a id="navBtn-1" onclick="closeNav()" href="javascript:delay('aboutus.html')">About Us</a>
 					<a id="navBtn-2" onclick="closeNav()" href="javascript:delay('concerts.html')" >Concerts</a>
 					<a id="navBtn-3" onclick="closeNav()" href="javascript:delay('supportus.html')">Support Us</a>
