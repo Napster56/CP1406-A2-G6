@@ -1,160 +1,147 @@
-<!DOCTYPE html>
-<!-- saved from url=(0069)file:///C:/Users/jc463674/AppData/Local/Temp/artist-arthur_athan.html -->
-<html lang="en-AU"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-<title>Untitled Document</title>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Barrier Reef Orchestra - Home</title>
+<link href="mainstyle.css" rel="stylesheet" type="text/css">
 </head>
 
-<body class="container">
+<body background="images/background02.jpg">
+<div class="row alignleft">
+
+	<!-- Logo container -->
+	<div class="col-12 alignleft">
+		<a href="index.html"><img src="images/logo.png" ></a>
+	</div>
+
+	<!-- Navigation bar container -->
+	<div class="col-nav">
+		<div id="mySidenav" class="sidenav">
+			<a href="#" onmouseover="openNav()" onclick="closeNav()"><img  class="offsetleft" src="images/violinring.png"></a>
+				<div class="btncontainer">
+					<a id="navbtn-1" onclick="closeNav()" style="margin-left: -620px;">About Us</a>
+					<a id="navbtn-2" onclick="closeNav()" style="margin-left: 570px;">Concerts</a>
+					<a id="navbtn-3" onclick="closeNav()" style="margin-left: -750px;">Support Us</a>
+					<a id="navbtn-4" onclick="closeNav()" style="margin-left: 570px;">Artists</a>
+					<a id="navbtn-5" onclick="closeNav()" style="margin-left: -640px;">Contact Us</a>
+				</div>
+		</div>
+	</div>
+
+	<div class="col-12">
+		<div class="contentsection">
+			<h1 class="aligncenter">Meet our Artists</h1>
+			<div id="artistmodal" class="modal">
+					<div class="modal-content">
+					<span class="close">&times;</span>
+					<div class="txtblue aligncenter">
+						<img src="images/arthur_athan_2.jpg" width="300px;" alt="Arthur at piano">
+						<div class="alignleft">
+							<h2>Arthur Athan</h2>
+								<p>Arthur Athan is a pianist and teacher from Melbourne, Australia. He currently studies piano with Tamara Smolyar at Monash University. His former teachers include Majella Drew and Sergei Suetin.</p>
+								<p>Arthur made his concerto debut in 2014 performing Tchaikovsky’s Piano Concerto No 1 with the Old Scotch Symphony Orchestra under John Ferguson. He reprised this performance with the Monash Academy Orchestra under Fabian Russell in 2015. He has performed for world-renowned artists including Paul Badura-Skoda, Leslie Howard, Natasha Vlassenko, Nicolas Hodges, Philippe Cassard and Roberto Prosseda.</p>
+								<p>He has received many accolades, including First Prize, the Audience Choice Award and the John Hopkins Fellowship at the 2015 Australian Concerto and Vocal Competition, the Monash Spivakovsky Prize (2015) and a perfect score in his Music Performance studies (2011). Arthur was selected for the 2015 Lev Vlassenko Piano Competition in Brisbane and the 2016 Keri International Piano Competition in New Zealand. Most recently, he has been accepted into semi-final stage of the UCSI International Piano Competition in Malaysia. Arthur also received first prize in 3MBS’ inaugural season of ‘The Talent’ in 2014.</p>
+								<p>Arthur will appear with the Metropolitan Symphony Orchestra in Perth playing Rachmaninov in the 2017 season; he continues his fifth year undergraduate studies at Monash University in Law, Music and Indonesian language studies.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4">
+					<a id="cardbtn">
+						<div class="card">
+							<img src="images/arthur-athan2.png" alt="Arthur Athan" width="142px" height="194">
+							<div class="cardinfo">
+								<h3>Arthur Athan</h3>
+								<p>Cello</p>
+							</div>
+						</div>
+					</a>
+					</div>
+					<div class="col-4">
+						<a id="cardbtn">
+							<div class="card">
+								<img src="images/arthur-athan2.png" alt="Arthur Athan" width="142px" height="194">
+								<div class="cardinfo">
+									<h3>Arthur Athan</h3>
+									<p>Cello</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-4">
+						<a id="cardbtn">
+							<div class="card">
+								<img src="images/arthur-athan2.png" alt="Arthur Athan" width="142px" height="194">
+								<div class="cardinfo">
+									<h3>Arthur Athan</h3>
+									<p>Cello</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-4">
+						<a id="cardbtn">
+							<div class="card">
+								<img src="images/arthur-athan2.png" alt="Arthur Athan" width="142px" height="194">
+								<div class="cardinfo">
+									<h3>Arthur Athan</h3>
+									<p>Cello</p>
+								</div>
+							</div>
+						</a>
+					</div>
+	  	</div>
+		</div>
+	</div>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("mySidenav").style.left = "0px";
+		document.getElementById("navbtn-1").style.marginLeft = "-620px";
+		document.getElementById("navbtn-2").style.marginLeft = "570px";
+		document.getElementById("navbtn-3").style.marginLeft = "-750px";
+		document.getElementById("navbtn-4").style.marginLeft = "570px";
+		document.getElementById("navbtn-5").style.marginLeft = "-640px";
+}
+
+	function closeNav() {
+    	document.getElementById("mySidenav").style.width = "550px";
+    	document.getElementById("mySidenav").style.left = "-240px";
+			document.getElementById("navbtn-1").style.marginLeft = "200px";
+			document.getElementById("navbtn-2").style.marginLeft = "200px";
+			document.getElementById("navbtn-3").style.marginLeft = "200px";
+			document.getElementById("navbtn-4").style.marginLeft = "200px";
+			document.getElementById("navbtn-5").style.marginLeft = "200px";
+	}
+
+	function closeall(){
+		document.getElementById("artistmodal").style.display = "none";
+	}
+
+	var modal = document.getElementById('artistmodal');
+	var btn = document.getElementById("cardbtn");
+	var span = document.getElementsByClassName("close")[0];
+
+	btn.onclick = function() {
+    	modal.style.display = "block";
+	}
+
+	span.onclick = function() {
+    	modal.style.display = "none";
+	}
+
+	window.onclick = function(event) {
+    	if (event.target == modal) {
+        	modal.style.display = "none";
+    	}
+	}
+
+		window.onload = closeall(); closeNav();
+</script>
 
 
-
-
-
-    <title>Barrier Reef Orchestra - Arthur Athan</title>
-
-    
-
-    <link href="file:///C:/Users/jc463674/AppData/Local/Temp/artist-arthur_athan.html" rel="stylesheet" type="text/css">
-
-
-
-
-
-    <div class="header">        
-
-        
-
-        <a href="file:///C:/Users/jc463674/AppData/Local/Temp/index.html">
-
-            <img src="file:///C:/Users/jc463674/AppData/Local/Temp/images/NEW-BRO-LOGO-BLUE-ORANGE.png" class="imageHeader" title="Home page" alt="Go to home" width="647" height="230"></a>
-
-        <h1>Barrier Reef Orchestra</h1>
-
-    <div>
-
-        <h2>Arthur Athan</h2>
-
-        <p>Arthur Athan is a pianist and teacher from Melbourne, Australia. He currently studies piano with Tamara Smolyar at Monash University. His former teachers include Majella Drew and Sergei Suetin.Arthur made his concerto debut in 2014 performing Tchaikovsky’s Piano Concerto No 1 with the Old Scotch Symphony Orchestra under John Ferguson. He reprised this performance with the Monash Academy Orchestra under Fabian Russell in 2015. He has performed for world-renowned artists including Paul Badura-Skoda, Leslie Howard, Natasha Vlassenko, Nicolas Hodges, Philippe Cassard and Roberto Prosseda.</p>
-		  <p>He has received many accolades, including First Prize, the Audience Choice Award and the John Hopkins Fellowship at the 2015 Australian Concerto and Vocal Competition, the Monash Spivakovsky Prize (2015) and a perfect score in his Music Performance studies (2011). Arthur was selected for the 2015 Lev Vlassenko Piano Competition in Brisbane and the 2016 Keri International Piano Competition in New Zealand. Most recently, he has been accepted into semi-final stage of the UCSI International Piano Competition in Malaysia. Arthur also received first prize in 3MBS’ inaugural season of ‘The Talent’ in 2014.</p> 
-		  <p>Arthur will appear with the Metropolitan Symphony Orchestra in Perth playing Rachmaninov in the 2017 season; he continues his fifth year undergraduate studies at Monash University in Law, Music and Indonesian language studies.</p> 
-    </div> 
-<!--   1    -->	
-	<div>
-
-        <h2>Leah Li</h2>
-
-        <p>Leah Xiang Li is a Townville based harpist who graduated from the Queensland Conservatorium Griffith University under the tutelage of Sebastien Lipman. She was the recipient of Ross Peters 4MBS Chamber Music Prize and performed for the Honourable Dame Quentin Bryce (former Governor-General of Australia).</p> 
-		<p>Leah‘s repertoire spans from the Baroque to the present day, including being the principal harpist for orchestras such as the Australian International Symphony Orchestra Institution, Queensland Youth Symphony Orchestra, Queensland Conservatorium Symphony Orchestra and Queensland Conservatorium Opera Orchestra.</p>
-		<p>Currently enjoying a diverse career as an orchestral and chamber musician, soloist, instrumental teacher and primary school language teacher, she holds a special interest in Jazz and is seeking to fulfil this passion through further study.</p>
-		<p>Her current involvement in Barrier Reef Orchestra demonstrates her dedication to community outreach, education and musical advocacy.</p>
-    </div> 
-<!--   2    -->	
-	<div>
-
-        <h2>Yoshika Masuda</h2>
-
-        <p>Born in Kobe, Japan, Yoshika Masuda first started to play the cello at the age of five.</p>
-		<p>After studying with George Pedersen in Australia, he then went on to continue studying at the Royal Northern College of Music (RNCM) in Manchester on a full scholarship. Yoshika gained his Bachelor of Music with first class honours from the RNCM, receiving both the Sir John Munduell Principals’s Prize and the Leonard Rose Cello Award for outstanding achievement. He also completed his Master of Music at the RNCM with distinction the following year. Yoshika is currently continuing his studies in Los Angeles as a Doctorate student.</p>
-		<p>Yoshika has performed concertos and recitals throughout Australia, Austria, France, Italy, Japan, the UK and USA.</p>
-		<p>Yoshika was recently awarded first prize at both the Australian Concerto and Vocal Competition and the YMF National Debut Concerto Competition, and is also the winner of the Yamaha Music Foundation of Europe String Award. He has also won top prizes at the Sydney Cello Award, Australian National Youth Concerto Competition and the J A Beare International Solo Bach Competition.</p>
-		<p>Yoshika’s cello is a fine Carl Becker model (1930), loaned to him from a private foundation.</p>
-    </div>
-	
-<!--   3    -->	
-	<div>
-
-        <h2>Domenico Taraborrelli</h2>
-
-        <p>Domenico is one of Brisbane’s most experienced and versatile multicultural entertainers.</p> 
-		<p>He has performed in almost every possible style since he commenced his musical career in 1971 at age 4. He has also performed in many venues from QPAC with the Queensland Pops Orchestra to being runners up with his Celtic Band, Murphy’s Pigs at the Tamworth Golden Fiddle Awards.</p>
-		<p>He studied music on the traditional European instrument called the Piano Accordion and while this is still his chosen instrument, he also now uses the latest electronic midi accordion which incorporates other built in instruments.</p>
-		<p>Domenico moved from three piece cabaret bands to a more sophisticated five piece band, the Latin Mafia which performs swing and Latin classics from the Rat Pack era.</p>
-    </div>
-
-<!--   4    -->	
-	<div>
-
-        <h2>Jennifer Bradstreet</h2>
-
-        <p>An accomplished flutist, Jennifer Bradstreet completed a Bachelor of Music with Honours at the Sydney Conservatorium, before taking up a summer scholarship at St Andrews and Oxford in the UK, and then moving to London in 2010. She became a student at the Royal College of Music under British flautist Susan Milan, and graduated with a Postgraduate Diploma of Performance in 2011.</p>
-		<p>While in London, she played in side-by-side projects with the London Symphony and was invited onto the prestigious BBC Symphony Orchestral pathway. Many summer scholarships and international master-classes followed, in Germany, England and Italy.</p>
-		<p>In 2013, Jennifer accepted a Masters scholarship under James Kortum and Aldo Baerten (Belgium) at the Sydney Conservatorium.</p>
-		<p>She was a finalist in the 2013 Australian Flute Festival Orchestral Flute Competition and first-prize winner in the 2014 Australian Concerto & Vocal Competition (all instruments).</p>
-		<p>She is active as a soloist and chamber musician, and also performs regularly with the Australian Opera and Ballet Orchestra in Sydney, with whom she has freelanced since 2013.</p>
-    </div>
-
-<!--   5    -->	
-	<div>
-
-        <h2>David Hudson</h2>
-
-        <p>A musician/entertainer, 2015 has taken David to Turkey, Italy, France and the United Kingdom with private and public performances and now brings him to Townsville.</p> 
-		<p>He has performed in many venues from QPAC with the Queensland Pops Orchestra to being runners up with his Celtic Band, Murphy’s Pigs at the Tamworth Golden Fiddle Awards.</p>
-		<p>He utilises a diverse range of musical styles from around the world and will be a great asset to our World Music Concert.</p>
-    </div>
-	
-<!--   6    -->	
-	<div>
-
-        <h2>Adam Lopez</h2>
-
-        <p>Adam Lopez has undoubtedly got one of the most fascinating vocal instruments on the planet. He delighted audiences when he sang in Townsville with the Barrier Orchestra in 2012 along with Sean O’Boyle and James Morrison.</p> 
-		<p>In fact, Adam Lopez’s exceptional vocal artistry has paved opportunities to perform backing vocals for some of the biggest names in the music industry such as Mariah Carey, Keith Urban and The Coors, his most recent noted collaboration being headlined with Australian Jazz legend James Morrison in a string of Symphonic Concerts in Perth, Hobart and Brisbane.</p>
-		<p>His phenomenal vocal range smashed two Guinness World Records (one note above the range of a piano!). This achievement has astounded audiences from all around the world leading him to perform and appear on international television and radio stations in Japan, Spain, Italy, Korea, Hong Kong and the USA.</p>
-		<p>His discography includes an eclectic collection of genres spanning from Pop-Opera, Pop, Rhythm &Blues, Jazz, Power Ballads and Fiery Latin.</p>
-    </div>
-	
-<!--   7    -->	
-	<div>
-
-        <h2>Mark Shiell</h2>
-
-        <p>Currently serving as Artistic Director and Principal Conductor of Zelman Symphony Orchestra, the Ballarat Symphony and the Macquarie Philharmonia, Mark has guest-conducted many ensembles such as:</p> 
-		<p>The Melbourne Symphony Orchestra, West Australian Symphony, Moscow Symphony Orchestra, State Academic Symphony Orchestra of St. Petersburg, Victorian Opera, Orchestra Ensemble Kanazawa, Canberra Symphony Orchestra, Sydney Sinfonia, Melbourne Youth Orchestra, University of Melbourne Symphony Orchestra and the Orchestras of the State Music Camps in Melbourne and Adelaide.</p>
-		<p>Most recently, Mark developed a Regional Orchestra Weekend for ensembles from across Victoria to meet and perform together, with the aim to make this an annual event.</p>
-		<p>His love of community and youth music has kept him busy contributing to the growth and development of important initiatives in both areas here in Australia.</p>
-		<p>Mark is also passionate about the education and training of future conductors, and has been frequently involved as a guest teacher of the Masters of Conducting students at the Melbourne Conservatorium in 2015.</p>
-    </div>
-	
-<!--   8    -->	
-	<div>
-
-        <h2>Raymond Yong</h2>
-
-        <p>Raymond Yong has been a regular guest with the barrier Reef Orchestra since 2011, conducting the orchestra, performing as a piano soloist, and providing conducting workshops to teachers and conductors in the Townsville area.</p> 
-		<p>Born in Malaysia, emigrating to Australia at the age of two, he received his initial musical training in Perth, performing regularly in public piano recitals from an early age. It was in High School that he first took to the podium as a conductor, directing his school orchestra and choir.</p>
-		<p>Raymond went on to study conducting at the University of Melbourne as a pupil of the late John Hopkins and received further training in the Symphony Australia Young Development Programme. He became the Music Director of the Victorian Youth Symphony Orchestra and Victoria Chorale and was the Founding Director of Orchestra 21.</p> 
-		<p>He has appeared as Guest Conductor for the Melbourne Chamber Orchestra, the Port Fairy Music Festival, Stonnington Symphony, Preston Symphony, and Kooyong Chamber Players.</p> 
-		<p>Not only a conductor, Raymond is also a sought-after piano soloist and accompanist.</p> 
-		<p>Concert highlights include Chamber Music performances at the Musica Viva, Huntington Festival, the Linari Classic in Italy, as well as piano concerto engagements with the Melbourne Symphony, the Sydney Symphony, West Australian and Tasmanian Symphony Orchestras.</p> 
-    </div>
-	
-<!--   9    -->	
-	<div>
-
-        <h2>Siobhan Patrick</h2>
-
-        <p>For 13 years old Siobhan Patrick, performing the role of “Louisa” in The Sound of Music for the Townsville Choral and Orchestral Society ignited her desire to be a professional performer.</p>
-		<p>She is a lyric soprano with a Graduate Diploma of Music (Opera) from the Western Australian Academy of Performing Arts and further vocal studies in the UK, Italy and Austria. For the past 3.5 years, Siobhan has been living and working in Vienna.</p>
-		<p>In Vienna, Siobhan teaches singing and works as a freelance singer and musician. She is a guest soloist at the Reformierte Stadtkirche in the first district and performed in their program this year for Die Lange Nacht der Kirchen (The Long Night of the Churches). In November, Siobhan will perform her first full recital in Vienna, “Dein ist mein ganzes Herz”, hosted by the Austro-American Society.</p>
-		<p>Siobhan has performed lead roles across opera, oratorio and music theatre and has many years experience as a performer of cabaret, jazz and folk music. She has been awarded numerous vocal prizes (including the Vocal Section of the Australian Concerto and Vocal Competition twice) and vocal grants from the Phonographic Performing Company of Australia and the Australia Council for the Arts. Siobhan has performed on a number of independent CDs, including a track that won Best Australian Song at the 2008 Australian Songwriting Awards.</p>
-		<p>Siobhan grew up in Townsville and has a Bachelor of Science with Honours in Mathematics from James Cook University.</p>
-    </div>
-	
-<!--   10    -->
-
-
-	
-
-
-</div></body></html>
-
-
-
-
-
-
-
-
-
+</body>
+</html>
