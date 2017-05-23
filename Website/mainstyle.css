@@ -52,4 +52,35 @@ row::after {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-/* -------------------------- */
+
+/* classes for alignments */
+
+.alignright {
+	text-align: right;
+	padding-right: 50px;
+}
+.alignleft {
+	text-align: left;
+}
+.aligncenter {
+	text-align: center;
+}
+
+.txtwhite {
+	text-shadow: 2px 2px 5px #000000;
+	font-size: 120%;
+	color: white;
+}
+
+.txtred {
+	color: rgb(116, 0, 62);
+}
+
+/* regular tags */
+h1 {
+	font-size: 50px;
+}
+
+a {
+	cursor: pointer;
+}
