@@ -84,3 +84,35 @@ h1 {
 a {
 	cursor: pointer;
 }
+
+/* containers */
+
+.navbar				/* contains navigation bar */
+{
+  height: 100%;
+  width: 240px;
+  position: fixed;
+  top: 150px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: 0.3s;
+  padding-top: 20px;
+  text-align: left;
+	overflow: hidden;
+}
+
+.navbtns 			/* contains buttons for navigation bar */
+{
+	margin-top: 80px;
+	text-align: left;
+	display: block;
+}
+
+.contentsection 	/* contains col's for all page content */
+{
+	margin-left: 250px;
+	background-color: rgba(0, 0, 0, 0.7);
+	text-align: center;
+	min-width: 400px;
+	padding-top: 30px;
+}
