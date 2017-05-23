@@ -155,12 +155,12 @@ a {
 
 									/* Card for artist info */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	background-color: white;
-  width: 300px;
+ 	width: 300px;
 	height: 500px;
-  margin: auto;
-  text-align: center;
+  	margin: auto;
+  	text-align: center;
 }
 
 .card img {
@@ -169,7 +169,7 @@ a {
 }
 
 .cardinfo {
-  padding: 0px;
+  	padding: 0px;
 	color: rgba(36, 0, 91, 1);
 }
 
