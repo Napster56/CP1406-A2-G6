@@ -7,6 +7,79 @@
 </head>
 <body background="images/background01.jpg">
 
+<!-- Grids for entire page -->
+<div class="row alignleft">
 
-	</body>
+	<!-- Logo -->
+	<div class="col-12 alignleft">
+		<a href="index.html"><img src="images/logo.png" ></a>
+	</div>
+
+	<!-- Navigation bar container -->
+	<div class="col-nav">
+		<div id="navBox" class="sidenav">
+			<a id="navImg" onclick="closeNav()"><img class="offsetleft" src="images/violinring.png"></a>	<!-- violin image for navigation bar -->
+			<a onmouseover="openNav()" onclick="closeNav()" style="top: 30px; z-index: 1; left: -70px; padding: 20px 20px 500px 10px;"></a>		<!-- Invisible button opens nav bar on mouse over -->
+				<div class="btncontainer">
+					<a id="navBtn-1" onclick="closeNav()" href="javascript:delay('aboutus.html')">About Us</a>
+					<a id="navBtn-2" onclick="closeNav()" href="javascript:delay('concerts.html')" >Concerts</a>
+					<a id="navBtn-3" onclick="closeNav()" href="javascript:delay('supportus.html')">Support Us</a>
+					<a id="navBtn-4" onclick="closeNav()" href="javascript:delay('artists.html')">Artists</a>
+					<a id="navBtn-5" onclick="closeNav()" href="javascript:delay('contactus.html')">Contact Us</a>
+				</div>
+		</div>
+	</div>
+	
+	<!-- Content section -->
+	<div class="col-12">
+		<div>
+			<div class="row">
+				<div class="col-12">
+		 			<h1>Barrier Reef Orchestra</h1>
+				</div>
+				<div class="col-12">
+					<h2>Townsville's Community Orchestra</h2>
+				</div>
+				<div class="col-12">
+					<h2>A North Queensland Icon</h2>
+				</div>
+	  		</div>
+		</div>
+	</div>
+</div>
+
+<!-- Javascript -->
+
+<script>
+	// Open navigation bar and posiotion top center
+	function openNav() {
+    	document.getElementById("navBox").style.width = "100%";					// expand nav bar
+    	document.getElementById("navBox").style.textalign = "center";			// aling content center
+		document.getElementById("navImg").style.marginLeft = "50%";				// center violin image
+		document.getElementById("navBtn-1").style.marginLeft = "-480px";		// position button:  about us
+		document.getElementById("navBtn-2").style.marginLeft = "550px";			// position button:  concerts
+		document.getElementById("navBtn-3").style.marginLeft = "-600px";		// position button:  support us
+		document.getElementById("navBtn-4").style.marginLeft = "550px";			// position button:  artists
+		document.getElementById("navBtn-5").style.marginLeft = "-500px";		// position button:  contact us
+}
+	
+	// Close navigation bar. Move evrything to default position
+	function closeNav() {
+    	document.getElementById("navBox").style.width = "240px";
+		document.getElementById("navImg").style.marginLeft = "0px";
+		document.getElementById("navBtn-1").style.marginLeft = "0px";
+		document.getElementById("navBtn-2").style.marginLeft = "0px";
+		document.getElementById("navBtn-3").style.marginLeft = "0px";
+		document.getElementById("navBtn-4").style.marginLeft = "0px";
+		document.getElementById("navBtn-5").style.marginLeft = "0px";
+	}
+
+	// Delay opening link to allow nav bar transition
+	function delay (URL) {
+    	setTimeout( function() { window.location = URL }, 220 );
+}
+
+</script>
+
+</body>
 </html>
