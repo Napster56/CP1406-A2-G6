@@ -93,6 +93,10 @@ a {
 	cursor: pointer;
 }
 
+h3 {
+	margin: 2px;
+}
+
 /* containers */
 
 					/* contains navigation bar */
@@ -187,9 +191,9 @@ a {
 }
 
 .card img {
-	margin: 20px 20px 0;
-	width: 150px;
-	height: 200px;
+	margin: 10px 0px 0;
+	width: 180px;
+	height: 230px;
 	border-radius: 15px;
 }
 
