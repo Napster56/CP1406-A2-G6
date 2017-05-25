@@ -28,11 +28,18 @@ function delay (URL) {
 
 // modal for artists
 function closeall(){
+  document.getElementById("contactmodal").style.display = "none";
   document.getElementById("artistmodal1").style.display = "none";
   document.getElementById("artistmodal2").style.display = "none";
   document.getElementById("artistmodal3").style.display = "none";
   document.getElementById("artistmodal4").style.display = "none";
   document.getElementById("artistmodal5").style.display = "none";
+}
+
+function contactmodal() {
+  closeNav();
+  closeall();
+  document.getElementById("contactmodal").style.display = "block";
 }
 
 function artistmodal1() {
