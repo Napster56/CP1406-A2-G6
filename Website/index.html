@@ -7,46 +7,56 @@
 </head>
 <body background="images/background01.jpg" onLoad="openNav()">
 
-<!-- Grids for entire page -->
-<div class="row alignleft">
+	<!-- Grids for entire page -->
+	<div class="row">
 
-	<!-- Logo -->
-	<div class="col-12 alignleft">
-		<a href="index.html"><img src="images/logo.png" ></a>
-	</div>
-
-	<!-- Navigation bar container -->
-	<div class="col-nav">
-		<div id="navBox" class="navbar">
-			<a id="navImg" onclick="closeNav()"><img class="offsetleft" src="images/violinring.png"></a>	<!-- violin image for navigation bar -->
-			<a onmouseover="openNav()" onclick="closeNav()" class="invisiblebtn" style="padding: 20px 20px 500px 10px;"></a>		<!-- Invisible button nav bar -->
-				<div class="navbtns">
-					<a id="navBtn-1" onclick="closeNav()" href="javascript:delay('aboutus.html')">About Us</a>
-					<a id="navBtn-2" onclick="closeNav()" href="javascript:delay('concerts.html')" >Concerts</a>
-					<a id="navBtn-3" onclick="closeNav()" href="javascript:delay('supportus.html')">Support Us</a>
-					<a id="navBtn-4" onclick="closeNav()" href="javascript:delay('artists.html')">Artists</a>
-					<a id="navBtn-5" onclick="closeNav()" href="javascript:delay('contactus.html')">Contact Us</a>
-				</div>
-		</div>
-	</div>
-	
-	<!-- Content section -->
-	<div class="col-12">
-		<div>
+		<!-- header -->
+		<div class="col-12">
+			<div id="header">
 			<div class="row">
-				<div class="col-12">
-		 			<h1>Barrier Reef Orchestra</h1>
+					<!-- Logo -->
+					<div class="col-3 alignleft">
+						<a href="index.html"><img src="images/logo.png"></a>
+					</div>
+					<!-- Call to action -->
+					<div class="col-4" style="float:right;">
+						<h1>Call to action</h1>
+					</div>
+					<!-- announcements -->
+					<div class="col-4" style="float:center;">
+						<h1>announcements</h1>
+					</div>
 				</div>
-				<div class="col-12">
-					<h2>Townsville's Community Orchestra</h2>
+			</div>
+		</div>
+
+		<!-- Navigation bar container -->
+		<div class="col-nav">
+			<div id="navBox" class="navbar">
+				<a id="navImg" onclick="closeNav()"><img class="offsetleft" src="images/violinring.png"></a>	<!-- violin image for navigation bar -->
+				<a onmouseover="openNav()" onclick="closeNav()" class="invisiblebtn" style="padding: 20px 20px 500px 10px;"></a>		<!-- Invisible button nav bar -->
+					<div class="navbtns">
+						<a id="navBtn-1" onclick="closeNav()" href="javascript:delay('aboutus.html')">About Us</a>
+						<a id="navBtn-2" onclick="closeNav()" href="javascript:delay('concerts.html')" >Concerts</a>
+						<a id="navBtn-3" onclick="closeNav()" href="javascript:delay('supportus.html')">Support Us</a>
+						<a id="navBtn-4" onclick="closeNav()" href="javascript:delay('artists.html')">Artists</a>
+						<a id="navBtn-5" onclick="closeNav()" href="javascript:delay('contactus.html')">Contact Us</a>
+					</div>
+			</div>
+		</div>
+
+		<!-- Content section -->
+		<div class="col-12">
+			<div class="contentsection">
+				<div class="row">
+					<div class="col-12">
+						<h1 class="aligncenter">Barrier Reef Orchestra</h1>
+					</div>
 				</div>
-				<div class="col-12">
-					<h2>A North Queensland Icon</h2>
-				</div>
-	  		</div>
+			</div>
+
 		</div>
 	</div>
-</div>
 
 <!-- Javascript -->
 
@@ -62,7 +72,7 @@
 		document.getElementById("navBtn-4").style.marginLeft = "550px";			// position button:  artists
 		document.getElementById("navBtn-5").style.marginLeft = "-500px";		// position button:  contact us
 }
-	
+
 	// Close navigation bar. Move evrything to default position
 	function closeNav() {
     	document.getElementById("navBox").style.width = "240px";

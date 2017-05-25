@@ -154,6 +154,10 @@ a {
 	margin-left: -20px;
 }
 
+#header div {
+	margin-top: 10px;
+}
+
 					/* contains col's for all page content */
 .contentsection {
 	margin-left: 250px;
@@ -197,6 +201,9 @@ a {
 									/* Modal for extra artist info */
 
 .modal {
+	margin-left: 0px;
+	margin-top: 190px;
+	position: absolute;
   display: none;
   left: 0px;
   top: 0px;
