@@ -30,6 +30,9 @@ function delay (URL) {
 function closeall(){
   document.getElementById("artistmodal1").style.display = "none";
   document.getElementById("artistmodal2").style.display = "none";
+  document.getElementById("artistmodal3").style.display = "none";
+  document.getElementById("artistmodal4").style.display = "none";
+  document.getElementById("artistmodal5").style.display = "none";
 }
 
 function artistmodal1() {
@@ -40,8 +43,20 @@ function artistmodal2() {
   document.getElementById("artistmodal2").style.display = "block";
 }
 
+function artistmodal3() {
+  document.getElementById("artistmodal3").style.display = "block";
+}
+
+function artistmodal4() {
+  document.getElementById("artistmodal4").style.display = "block";
+}
+
+function artistmodal5() {
+  document.getElementById("artistmodal5").style.display = "block";
+}
+
 span.onclick = closeall();
 
-window.onclick = closeall();
+window.onclick = closeall() closeNav();
 
 window.onload = closeall();
