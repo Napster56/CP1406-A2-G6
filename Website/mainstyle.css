@@ -14,11 +14,9 @@ body {
 	font-family: "Lato", sans-serif;
 	color: white;
 	font-size: 20px;
+	overflow: hidden;
 }
 
-background {
-	position: fixed;
-}
 
 /* Grids allows for responsive design */
 
@@ -163,6 +161,8 @@ a {
 	background-color: rgba(0, 0, 0, 0.7);
 	text-align: center;
 	min-width: 400px;
+	overflow-y:auto;
+	height: 800px;
 }
 
 .padd {
@@ -175,15 +175,18 @@ a {
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	background-color: white;
- 	width: 300px;
-	height: 500px;
-	margin: auto;
+ 	width: 200px;
+	height: 340px;
+	margin: 20px;
 	text-align: center;
+	border-radius: 15px;
 }
 
 .card img {
-	margin: 27px;
-	margin-bottom: 0px;
+	margin: 20px 20px 0;
+	width: 150px;
+	height: 200px;
+	border-radius: 15px;
 }
 
 .cardinfo {
@@ -207,8 +210,9 @@ a {
 .modal-content {
     background-color: #fefefe;
     margin: 1% auto;
-    padding: 20px;
+    padding: 40px 10% 20px;
     border: 1px solid #888;
+		border-radius: 15px;
 		width: 80%;
     max-width: 1000px;
 }
