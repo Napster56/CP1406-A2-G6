@@ -11,11 +11,13 @@ html {
 body {
 	background-color: black;
 	background-repeat: no-repeat;
-	background-size: 100%;
-	background-size: cover;
 	font-family: "Lato", sans-serif;
 	color: white;
 	font-size: 20px;
+}
+
+background {
+	position: fixed;
 }
 
 /* Grids allows for responsive design */
@@ -25,7 +27,6 @@ body {
 }
 
 [class*="col-"] {
-	padding: 10px;
 	text-align: center;
 	min-width: 320px;
 	display: inline-block;
@@ -38,7 +39,7 @@ row::after {
 	text-align: center;
 }
 
-.col-nav {width: auto; padding-left: 0px; float: left;}
+.col-nav {width: auto; float: left;}
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -61,7 +62,6 @@ row::after {
 
 .alignright {
 	text-align: right;
-	padding-right: 50px;
 }
 .alignleft {
 	text-align: left;
@@ -102,13 +102,14 @@ a {
 	height: 100%;
 	width: 240px;
 	position: fixed;
-	top: 190px;
+	top: 160px;
 	z-index: 1;
 	background-color: rgba(0, 0, 0, 0.7);
 	transition: 0.3s;
 	padding-top: 20px;
 	text-align: left;
 	overflow: hidden;
+	margin-left: -10px
 }
 					/* navigation bar buttons */
 .navbar a {
@@ -151,18 +152,21 @@ a {
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.7);
 	position: fixed;
-	margin-top: 0px;
-	padding: none;
+	margin-top: -30px;
+	margin-left: -20px;
 }
 
 					/* contains col's for all page content */
 .contentsection {
 	margin-left: 250px;
-	margin-top: 130px;
+	margin-top: 140px;
 	background-color: rgba(0, 0, 0, 0.7);
 	text-align: center;
 	min-width: 400px;
-	padding: 30px;
+}
+
+.padd {
+	padding: 20px;
 }
 
 /* Card and modal for artists info */
@@ -183,22 +187,20 @@ a {
 }
 
 .cardinfo {
-  	padding: 0px;
+	padding: 0px;
 	color: rgba(36, 0, 91, 1);
 }
 
 									/* Modal for extra artist info */
 
-modal {
+.modal {
   display: none;
-  position: absolute;
-  left: 0;
+  left: 0px;
   top: 0px;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
+	text-align: center;
 }
 
 									/* Modal Content/Box */
@@ -207,7 +209,8 @@ modal {
     margin: 1% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+		width: 80%;
+    max-width: 1000px;
 }
 
 									/* Close Button */
