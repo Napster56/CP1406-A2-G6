@@ -90,7 +90,8 @@ row::after {
 
 /* regular tags */
 h1 {
-	font-size: 50px;
+	font-size: 40px;
+	font-family: 'Pacifico', cursive;
 }
 
 a {
@@ -198,6 +199,17 @@ h3 {
 	margin: 10px 0px 0;
 	width: 180px;
 	height: 230px;
+	border-radius: 15px;
+}
+
+.eventcard {
+	width: 330px;
+	height: 600px;
+}
+
+.eventcard img {
+	width: 300px;
+	height: 450px;
 	border-radius: 15px;
 }
 

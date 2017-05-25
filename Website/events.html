@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Barrier Reef Orchestra - Home</title>
+<link href="mainstyle.css" rel="stylesheet" type="text/css">
+<script src="mainjavascript.js"></script>
+</head>
+<body background="images/background02.jpg">
+
+<!-- Grids for entire page -->
+<div class="row">
+
+	<!-- header -->
+	<div class="col-12">
+		<div id="header">
+		<div class="row">
+				<!-- Logo -->
+				<div class="col-3 alignleft">
+					<a href="index.html"><img src="images/logo.png"></a>
+				</div>
+				<!-- Call to action -->
+				<div class="col-4 callToAction">
+					<h1>Call to action</h1>
+				</div>
+				<!-- announcements -->
+				<div class="col-4">
+					<h1>announcements</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Navigation bar container -->
+	<div class="col-nav">
+		<div id="navBox" class="navbar">
+			<a id="navImg" onclick="closeNav()"><img class="offsetleft" src="images/violinring.png"></a>	<!-- violin image for navigation bar -->
+			<a onmouseover="openNav()" onclick="closeNav()" class="invisiblebtn" style="padding: 20px 20px 500px 10px;"></a>		<!-- Invisible button nav bar -->
+				<div class="navbtns">
+					<a id="navBtn-1" onclick="closeNav()" href="javascript:delay('aboutus.html')">About Us</a>
+					<a id="navBtn-2" onclick="closeNav()" href="javascript:delay('concerts.html')" >Concerts</a>
+					<a id="navBtn-3" onclick="closeNav()" href="javascript:delay('supportus.html')">Support Us</a>
+					<a id="navBtn-4" onclick="closeNav()" href="javascript:delay('artists.html')">Artists</a>
+					<a id="navBtn-5" onclick="closeNav()" href="javascript:delay('contactus.html')">Contact Us</a>
+				</div>
+		</div>
+	</div>
+
+	<!-- Content section -->
+	<div class="col-12">
+		<div class="contentsection">
+			<div class="row">
+				<div class="col-12">
+					<h1 class="aligncenter">Our Events</h1>
+
+					<!-- Modal for artist info -->
+					<div id="artistmodal1" class="modal">
+						<div class="modal-content">
+							<a onclick="closeall()" class="close">&times;</a>
+							<div class="txtred aligncenter">
+								<img src="images/arthur_athan_2.jpg" width="300px;" alt="Arthur at piano">
+								<h2>Arthur Athan</h2>
+							</div>
+						</div>
+					</div>
+
+					<div id="artistmodal2" class="modal">
+						<div class="modal-content">
+							<a onclick="closeall()" class="close">&times;</a>
+							<div class="txtred aligncenter">
+								<img src="images/arthur_athan_2.jpg" width="300px;" alt="Arthur at piano">
+								<h2>2nd artist</h2>
+							</div>
+						</div>
+					</div>
+
+					<div id="artistmodal3" class="modal">
+						<div class="modal-content">
+							<a onclick="closeall()" class="close">&times;</a>
+							<div class="txtred aligncenter">
+								<img src="images/arthur_athan_2.jpg" width="300px;" alt="Arthur at piano">
+								<h2>3 artist</h2>
+							</div>
+						</div>
+					</div>
+
+					<div id="artistmodal4" class="modal">
+						<div class="modal-content">
+							<a onclick="closeall()" class="close">&times;</a>
+							<div class="txtred aligncenter">
+								<img src="images/arthur_athan_2.jpg" width="300px;" alt="Arthur at piano">
+								<h2>4 artist</h2>
+							</div>
+						</div>
+					</div>
+
+					<div id="artistmodal5" class="modal">
+						<div class="modal-content">
+							<a onclick="closeall()" class="close">&times;</a>
+							<div class="txtred aligncenter">
+								<img src="images/arthur_athan_2.jpg" width="300px;" alt="Arthur at piano">
+								<h2>5 artist</h2>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- Card for artist -->
+				<div class="col-2 padd">
+					<div class="card eventcard">
+						<img src="images/arthur.jpg" alt="Arthur Athan">
+						<div class="cardinfo">
+							<h3>Arthur Athan</h3>
+							<p>Cello</p>
+						</div>
+					</div>
+					<a onclick="artistmodal1()"></a>
+				</div>
+
+		</div>
+
+	</div>
+</div>
+
+</body>
+</html>
