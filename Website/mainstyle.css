@@ -141,7 +141,7 @@ h3 {
 }
 
 .navbar  a:hover{
-  color: #e1e3da;
+    color: #e1e3da;
 	font-size: 22px;
 	padding: 19px 29px 19px 29px;
 	text-shadow: 0 0 10px white;
@@ -267,6 +267,14 @@ h3 {
 	padding: 20px;
 }
 
+.benefitList li{
+	list-style:none;
+}
+.benefitList li:before{
+	content: "•";
+	padding-right: 5px;
+}
+
 									/* Modal for extra artist info */
 
 .modal {
@@ -285,38 +293,34 @@ h3 {
 
 									/* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+	background-color: #fefefe;
 	color: rgba(36, 0, 91, 1);
-  margin: 1% auto;
-  padding: 40px 40px 20px;
-  border: 1px solid #888;
+	margin: 1% auto;
+	padding: 40px 40px 20px;
+	border: 1px solid #888;
 	border-radius: 15px;
 	width: 90%;
-  max-width: 1000px;
+	max-width: 1000px;
 }
 
 									/* Close Button */
 .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 /* Form CSS */
 .hidden {							/* form module display */
 	display:none;
-}
-
-.signUp {
-	text-align:justify;
 }
 
 .error {
@@ -326,4 +330,17 @@ h3 {
 .errorMessage {
 	color: red;
 	font-size: 10px;
+}
+#signUpTable {
+	margin:0 auto;
+	background-color:lightblue; /*this whole selector is to be changed or removed*/
+	border-radius:15px;
+}
+#signUpTable tr td {
+	text-align:left;
+	min-width:175px;
+}
+
+#signUpTable tr #formControls {
+	text-align:center;
 }

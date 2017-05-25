@@ -70,59 +70,249 @@
 					<div class="row">
 						<div class="col-12">
 							<h1 class="aligncenter">Support us</h1>
-							<form name="signupForm" class="signUp" method="post" onSubmit="return validateForm(this)" onReset="feeReset(this)">
-								E-mail: <input type="text" name="email"> <span id="emailError" class="errorMessage"></span><br>
-								Password: <input type="password" name="pass"> <span id="passError" class="errorMessage"></span><br>
-								Re-type your Password: <input type="password" name="passValidate"> <span id="passValidateError" class="errorMessage"></span><br>
-								Membership type:
-								<input type="radio" name="mType" value="adult" checked="checked" id="adultR"><label for="adultR">Adult</label>
-								<input type="radio" name="mType" value="family" id="familyR"><label for="familyR">Family</label>
-								<input type="radio" name="mType" value="student" id="studentR"><label for="studentR">Student</label>
-								<input type="radio" name="mType" value="concession" id="concessionR"><label for="concessionR">Concession</label><br>
-								Title: <input type="text" name="title"> <span id="titleError" class="errorMessage"></span><br>
-								Family Name:  <input type="text" name="familyName"> <span id="familyNameError" class="errorMessage"></span><br>
-								Given Names:  <input type="text" name="givenName"> <span id="givenNameError" class="errorMessage"></span><br>
-								<div id="familyMembership" class="hidden">
-									Children: <button type="button" onClick="remChild()">-</button> <button type="button" onClick="addChild()">+</button><br>
-									<div id="children">
-										<span id="child1">1: <input type="text" name="childName1"> DOB: <input type="text" name="childDOB1" placeholder="dd/mm/yyyy"> <span id="child1Error" class="errorMessage"></span><br></span>
-										<span id="child2">2: <input type="text" name="childName2"> DOB: <input type="text" name="childDOB2" placeholder="dd/mm/yyyy"> <span id="child2Error" class="errorMessage"></span><br></span>
-										<span id="child3">3: <input type="text" name="childName3"> DOB: <input type="text" name="childDOB3" placeholder="dd/mm/yyyy"> <span id="child3Error" class="errorMessage"></span><br></span>
-										<span id="child4" class="hidden">4: <input type="text" name="childName4"> DOB: <input type="text" name="childDOB4" placeholder="dd/mm/yyyy"> <span id="child4Error" class="errorMessage"></span><br></span>
-										<span id="child5" class="hidden">5: <input type="text" name="childName5"> DOB: <input type="text" name="childDOB5" placeholder="dd/mm/yyyy"> <span id="child5Error" class="errorMessage"></span><br></span>
-										<span id="child6" class="hidden">6: <input type="text" name="childName6"> DOB: <input type="text" name="childDOB6" placeholder="dd/mm/yyyy"> <span id="child6Error" class="errorMessage"></span><br></span>
-										<span id="child7" class="hidden">7: <input type="text" name="childName7"> DOB: <input type="text" name="childDOB7" placeholder="dd/mm/yyyy"> <span id="child7Error" class="errorMessage"></span><br></span>
-										<span id="child8" class="hidden">8: <input type="text" name="childName8"> DOB: <input type="text" name="childDOB8" placeholder="dd/mm/yyyy"> <span id="child8Error" class="errorMessage"></span><br></span>
-										<span id="child9" class="hidden">9: <input type="text" name="childName9"> DOB: <input type="text" name="childDOB9" placeholder="dd/mm/yyyy"> <span id="child9Error" class="errorMessage"></span><br></span>
-										<span id="child10" class="hidden">10: <input type="text" name="childName10"> DOB: <input type="text" name="childDOB10" placeholder="dd/mm/yyyy"> <span id="child10Error" class="errorMessage"></span><br></span>
-									</div>
-								</div>
-								Address: <input type="text" name="address"> <span id="addressError" class="errorMessage"></span><br>
-								Phone number: <input type="text" name="phone"> Mobile: <input type="text" name="mobile"> <span id="phoneError" class="errorMessage"></span><br>
-								Membership Fee: <span id="mCost">$30</span><br>
-								Payment Options: <!-- Paypal only? --><br>
-								How can you help the orchestra?
-								<select name="role" required>
-									<option disabled selected value class="hidden">Choose an option</option>
-									<option value="playing">Playing in the Orchestra or Ensembles</option>
-									<option value="administration">Management or Administration</option>
-									<option value="support">Player Support</option>
-									<option value="fundraising">Fundraising</option>
-									<option value="marketing">Marketing and Promotion</option>
-									<option value="sponsorship">Sponsorship</option>
-									<option value="publishing">Desktop publishing</option>
-									<option value="conducting">Guest Conductor</option>
-								</select>
-								<div id="playerSignup" class="hidden">
-									Instruments played: <input type="text" name="instruments"> <span id="instrumentsError" class="errorMessage"></span><br>
-									Qualifications: <input type="text" name="qualifications"> <span id="qualificationsError" class="errorMessage"></span><br>
-									Experience: <textarea rows="4" cols="50" name="experience"></textarea> <span id="experienceError" class="errorMessage"></span>
-								</div><br>
-								<div id="conductorSignup" class="hidden">
-									CV upload: <input type="file" name="resume"> <span id="resumeError" class="errorMessage"></span><br>
-								</div><br>
-								<input type="reset">
-								<input type="submit" class="signupSubmit" value="Sign up!">
+							<h2>Become a Benefactor</h2>
+							<p>You are invited to become an Orchestra Benefactor and assist Townsville’s Community Orchestra with your personal and publicly acknowledged philanthropy, which encourages others to do the same.</p>
+							<p>You can become an Orchestra Benefactor with a philanthropic gift of $200 or more.</p>
+							<ul class="benefitList">Benefits of becoming a Benefactor
+								<li>Benefactors are placed on our Benefactor roll for twelve months.</li>
+								<li>The Benefactor roll will be published in each concert program and on our website for twelve months.</li>
+								<li>As a benefactor you will also receive two complimentary tickets to our next concert.</li>
+								<li>Benefactors will be invited as guests at our annual Season’s Launch function.</li>
+								<li>All Benefactors will receive our newsletter.</li>
+								<li>The Barrier Reef Orchestra is registered as a Deductible Gift Recipient and donations are tax deductible.</li>
+							</ul>
+							<p>For more information contact Simon McConnell 0418 776961, brotownsville@gmail.com.</p>
+							<p>Please follow the link to paypal below and follow the instructions or <a href="content/bro-benefactor-form.pdf" download>download the form to complete manually.</a></p>
+							<p>Cheques are to be made payable to North Queensland Ensembles Inc. Direct Debit to BSB 034-222 Account No. 173922.</p>
+
+							<form method="post" target="_top">
+								<input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+							</form><!--cut down paypal button-->
+							
+							<h2>Become a Member</h2>
+							<p>You can support the Barrier Reef Orchestra by becoming an Orchestra Member. Your subscription helps to keep us operating and we provide substantial discounts whenever possible.</p>
+							<ul class="benefitList">Benefits of becoming a Member
+								<li>Ticket discounts of up to 50% apply to Members who attend any events of the Barrier Reef Orchestra</li>
+								<li>The Barrier Reef Orchestra is registered as a Deductible Gift Recipient and any additional donations are tax-deductible!</li>
+							</ul>
+							<p>Please complete the details below and press Submit, or <a href="content/membership-form.docx" download>download the form to complete manually.</a></p>
+							<form name="signupForm" id="signUp" method="post" onSubmit="return validateForm(this)" onReset="feeReset(this)">
+								<table id="signUpTable">
+									<tbody>
+										<tr>
+											<td>E-mail:</td>
+											<td><input type="text" name="email"></td>
+											<td></td>
+											<td></td>
+											<td><span id="emailError" class="errorMessage"></span></td>
+										</tr>
+										<tr>
+											<td>Password:</td>
+											<td><input type="password" name="pass"></td>
+											<td></td>
+											<td></td>
+											<td><span id="passError" class="errorMessage"></span></td>
+										</tr>
+										<tr>
+											<td>Re-type your Password:</td>
+											<td><input type="password" name="passValidate"></td>
+											<td></td>
+											<td></td>
+											<td><span id="passValidateError" class="errorMessage"></span></td>
+										</tr>
+										<tr>
+											<td>Title:</td>
+											<td><input type="text" name="title"></td>
+											<td></td>
+											<td></td>
+											<td><span id="titleError" class="errorMessage"></span></td>
+										</tr>
+										<tr>
+											<td>Family Name:</td>
+											<td><input type="text" name="familyName"></td>
+											<td></td>
+											<td></td>
+											<td><span id="familyNameError" class="errorMessage"></span></td>
+										</tr>
+										<tr>
+											<td>Given Names:</td>
+											<td><input type="text" name="givenName"></td>
+											<td></td>
+											<td></td>
+											<td><span id="givenNameError" class="errorMessage"></span></td>
+										</tr>
+										<tr>
+											<td>Membership type:</td>
+											<td colspan="2">
+												<input type="radio" name="mType" value="adult" checked="checked" id="adultR"><label for="adultR">Adult</label>
+												<input type="radio" name="mType" value="family" id="familyR"><label for="familyR">Family</label>
+												<input type="radio" name="mType" value="student" id="studentR"><label for="studentR">Student</label>
+												<input type="radio" name="mType" value="concession" id="concessionR"><label for="concessionR">Concession</label>
+											</td>
+											<td></td>
+											<td></td>
+										</tr>
+									</tbody>
+									<tbody id="familyMembership" class="hidden">
+										<tr>
+											<td>Children:</td>
+											<td><button type="button" onClick="remChild()">-</button> <button type="button" onClick="addChild()">+</button></td>
+											<td colspan="3"></td>
+										</tr>
+										
+										<tr id="child1">
+											<td>Name:</td>
+											<td><input type="text" name="childName1"></td>
+											<td>DOB:</td>
+											<td><input type="text" name="childDOB1" placeholder="dd/mm/yyyy"></td>
+											<td><span id="child1Error" class="errorMessage"></span></td>
+										</tr>
+										<tr id="child2">
+											<td>Name:</td>
+											<td><input type="text" name="childName2"></td>
+											<td>DOB:</td>
+											<td><input type="text" name="childDOB2" placeholder="dd/mm/yyyy"></td>
+											<td><span id="child2Error" class="errorMessage"></span></td>
+										</tr>
+										<tr id="child3">
+											<td>Name:</td>
+											<td><input type="text" name="childName3"></td>
+											<td>DOB:</td>
+											<td><input type="text" name="childDOB3" placeholder="dd/mm/yyyy"></td>
+											<td><span id="child3Error" class="errorMessage"></span></td>
+										</tr>
+										<tr id="child4" class="hidden">
+											<td>Name:</td>
+											<td><input type="text" name="childName4"></td>
+											<td>DOB:</td>
+											<td><input type="text" name="childDOB4" placeholder="dd/mm/yyyy"></td>
+											<td><span id="child4Error" class="errorMessage"></span></td>
+										</tr>
+										<tr id="child5" class="hidden">
+											<td>Name:</td>
+											<td><input type="text" name="childName5"></td>
+											<td>DOB:</td>
+											<td><input type="text" name="childDOB5" placeholder="dd/mm/yyyy"></td>
+											<td><span id="child5Error" class="errorMessage"></span></td>
+										</tr>
+										<tr id="child6" class="hidden">
+											<td>Name:</td>
+											<td><input type="text" name="childName6"></td>
+											<td>DOB:</td>
+											<td><input type="text" name="childDOB6" placeholder="dd/mm/yyyy"></td>
+											<td><span id="child6Error" class="errorMessage"></span></td>
+										</tr>
+										<tr id="child7" class="hidden">
+											<td>Name:</td>
+											<td><input type="text" name="childName7"></td>
+											<td>DOB:</td>
+											<td><input type="text" name="childDOB7" placeholder="dd/mm/yyyy"></td>
+											<td><span id="child7Error" class="errorMessage"></span></td>
+										</tr>
+										<tr id="child8" class="hidden">
+											<td>Name:</td>
+											<td><input type="text" name="childName8"></td>
+											<td>DOB:</td>
+											<td><input type="text" name="childDOB8" placeholder="dd/mm/yyyy"></td>
+											<td><span id="child8Error" class="errorMessage"></span></td>
+										</tr>
+										<tr id="child9" class="hidden">
+											<td>Name:</td>
+											<td><input type="text" name="childName9"></td>
+											<td>DOB:</td>
+											<td><input type="text" name="childDOB9" placeholder="dd/mm/yyyy"></td>
+											<td><span id="child9Error" class="errorMessage"></span></td>
+										</tr>
+										<tr id="child10" class="hidden">
+											<td>Name:</td>
+											<td><input type="text" name="childName10"></td>
+											<td>DOB:</td>
+											<td><input type="text" name="childDOB10" placeholder="dd/mm/yyyy"></td>
+											<td><span id="child10Error" class="errorMessage"></span></td>
+										</tr>
+									</tbody>
+									<tbody>
+										<tr>
+											<td>Address:</td>
+											<td><input type="text" name="address"></td>
+											<td></td>
+											<td></td>
+											<td><span id="addressError" class="errorMessage"></span></td>
+										</tr>
+										<tr>
+											<td>Phone number:</td>
+											<td><input type="text" name="phone"></td>
+											<td></td>
+											<td></td>
+											<td><span id="phoneError" class="errorMessage"></span></td>
+										</tr>
+										<tr>
+											<td>Mobile:</td>
+											<td><input type="text" name="mobile"></td>
+											<td></td><td></td>
+											<td><span id="mobileError" class="errorMessage"></span></td>
+										</tr>
+										<tr>
+											<td>Membership Fee:</td>
+											<td><span id="mCost">$30</span></td>
+											<td colspan="3"></td>
+										</tr>
+										<tr>
+											<td>Role:</td>
+											<td>
+												<select name="role" required>
+													<option disabled selected value class="hidden">Choose an option</option>
+													<option value="playing">Playing in the Orchestra or Ensembles</option>
+													<option value="administration">Management or Administration</option>
+													<option value="support">Player Support</option>
+													<option value="fundraising">Fundraising</option>
+													<option value="marketing">Marketing and Promotion</option>
+													<option value="sponsorship">Sponsorship</option>
+													<option value="publishing">Desktop publishing</option>
+													<option value="conducting">Guest Conductor</option>
+												</select>
+											</td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+									</tbody>
+									<tbody id="playerSignup" class="hidden">
+										<tr>
+											<td>Instruments played:</td>
+											<td><input type="text" name="instruments"></td>
+											<td></td><td></td>
+											<td><span id="instrumentsError" class="errorMessage"></span></td>
+										</tr>
+											<tr><td>Qualifications:</td>
+											<td><input type="text" name="qualifications"></td>
+											<td></td><td></td>
+											<td><span id="qualificationsError" class="errorMessage"></span></td>
+										</tr>
+										<tr>
+											<td>Experience:</td>
+											<td colspan="2"><textarea rows="4" cols="50" name="experience"></textarea></td>
+											<td></td>
+											<td><span id="experienceError" class="errorMessage"></span></td>
+										</tr>
+									</tbody>
+									<tbody id="conductorSignup" class="hidden">
+										<tr>
+											<td>CV upload:</td>
+											<td><input type="file" name="resume"></td>
+											<td></td><td></td>
+											<td><span id="resumeError" class="errorMessage"></span></td>
+										</tr>
+									</tbody>
+									<tbody>
+										<tr>
+											<td id="formControls" colspan="5">
+												<input type="reset">
+												<input type="submit" class="signupSubmit" value="Sign up!">
+											</td>
+										</tr>
+									</tbody>
+								</table>
 							</form>
 							<script src="eventListeners.js"></script>
 						</div>
