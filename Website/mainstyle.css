@@ -27,7 +27,7 @@ body {
 [class*="col-"] {
 	text-align: center;
 	min-width: 350px;
-	display: inline-block;
+	display: inline-grid;
 	clear: both;
 }
 
