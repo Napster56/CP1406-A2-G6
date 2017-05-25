@@ -22,9 +22,19 @@
 		Given Names:  <input type="text" name="givenName"><br>
 	  	<div id="familyMembership" class="hidden">
 			Children:<br>
-			1: <input type="text" name="childName1"> DOB: <input type="text" name="childDOB1" placeholder="dd/mm/yyyy"><br>
-			2: <input type="text" name="childName2"> DOB: <input type="text" name="childDOB2" placeholder="dd/mm/yyyy"><br>
-			3: <input type="text" name="childName3"> DOB: <input type="text" name="childDOB3" placeholder="dd/mm/yyyy"><br>
+			<div id="children">
+			<span id="child1">1: <input type="text" name="childName1"> DOB: <input type="text" name="childDOB1" placeholder="dd/mm/yyyy"><br></span>
+			<span id="child2">2: <input type="text" name="childName2"> DOB: <input type="text" name="childDOB2" placeholder="dd/mm/yyyy"><br></span>
+			<span id="child3">3: <input type="text" name="childName3"> DOB: <input type="text" name="childDOB3" placeholder="dd/mm/yyyy"><br></span>
+			<span id="child4" class="hidden">4: <input type="text" name="childName4"> DOB: <input type="text" name="childDOB4" placeholder="dd/mm/yyyy"><br></span>
+			<span id="child5" class="hidden">5: <input type="text" name="childName5"> DOB: <input type="text" name="childDOB5" placeholder="dd/mm/yyyy"><br></span>
+			<span id="child6" class="hidden">6: <input type="text" name="childName6"> DOB: <input type="text" name="childDOB6" placeholder="dd/mm/yyyy"><br></span>
+			<span id="child7" class="hidden">7: <input type="text" name="childName7"> DOB: <input type="text" name="childDOB7" placeholder="dd/mm/yyyy"><br></span>
+			<span id="child8" class="hidden">8: <input type="text" name="childName8"> DOB: <input type="text" name="childDOB8" placeholder="dd/mm/yyyy"><br></span>
+			<span id="child9" class="hidden">9: <input type="text" name="childName9"> DOB: <input type="text" name="childDOB9" placeholder="dd/mm/yyyy"><br></span>
+			<span id="child10" class="hidden">10: <input type="text" name="childName10"> DOB: <input type="text" name="childDOB10" placeholder="dd/mm/yyyy"><br></span>
+			</div>
+			<button type="button" onClick="remChild()">-</button> <button type="button" onClick="addChild()">+</button>
 		</div>
 		Address: <input type="text" name="address"><br>
 		Phone number: <input type="text" name="phone"> Mobile: <input type="text" name="mobile"><br>
@@ -32,7 +42,7 @@
 		Payment Options: <!-- Paypal only? --><br>
 		How can you help the orchestra?
 		<select name="role" required>
-			<option disabled selected value id="disabledOption">Choose an option</option>
+			<option disabled selected value class="hidden">Choose an option</option>
 			<option value="playing">Playing in the Orchestra or Ensembles</option>
 			<option value="administration">Management or Administration</option>
 			<option value="support">Player Support</option>
@@ -40,11 +50,15 @@
 			<option value="marketing">Marketing and Promotion</option>
 			<option value="sponsorship">Sponsorship</option>
 			<option value="publishing">Desktop publishing</option>
+			<option value="conducting">Guest Conductor</option>
 		</select>
 		<div id="playerSignup" class="hidden">
 			Instruments played: <input type="text" name="instruments"><br>
 			Qualifications: <input type="text" name="qualifications"><br>
 			Experience: <textarea rows="4" cols="50" name="experience"></textarea>
+		</div><br>
+		<div id="conductorSignup" class="hidden">
+			CV upload: <input type="file" name="resume"><br>
 		</div><br><br>
 		<input type="reset">
 		<input type="submit" class="signupSubmit" value="Sign up!">

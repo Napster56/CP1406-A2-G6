@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Barrier Reef Orchestra - Home</title>
+		<link href="mainstyle.css" rel="stylesheet" type="text/css">
+		<script src="mainjavascript.js"></script>
+		<script src="formValidation.js"></script>
+	</head>
+
+	<body background="images/background03.jpg">
+		<!-- Grids for entire page -->
+		<div class="row">
+			<!-- header -->
+			<div class="col-12">
+				<div id="header">
+				<div class="row">
+						<!-- Logo -->
+						<div class="col-3 alignleft">
+							<a href="index.html"><img src="images/logo.png"></a>
+						</div>
+						<!-- Call to action -->
+						<div class="col-4" style="float:right;">
+							<h1>Call to action</h1>
+						</div>
+						<!-- announcements -->
+						<div class="col-4" style="float:center;">
+							<h1>announcements</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Navigation bar container -->
+			<div class="col-nav">
+				<div id="navBox" class="navbar">
+					<a id="navImg" onclick="closeNav()"><img class="offsetleft" src="images/violinring.png"></a>	<!-- violin image for navigation bar -->
+					<a onmouseover="openNav()" onclick="closeNav()" class="invisiblebtn" style="padding: 20px 20px 500px 10px;"></a>		<!-- Invisible button nav bar -->
+						<div class="navbtns">
+							<a id="navBtn-1" onclick="closeNav()" href="javascript:delay('aboutus.html')">About Us</a>
+							<a id="navBtn-2" onclick="closeNav()" href="javascript:delay('concerts.html')" >Concerts</a>
+							<a id="navBtn-3" onclick="closeNav()" href="javascript:delay('supportus.html')">Support Us</a>
+							<a id="navBtn-4" onclick="closeNav()" href="javascript:delay('artists.html')">Artists</a>
+							<a id="navBtn-5" onclick="closeNav()" href="javascript:delay('contactus.html')">Contact Us</a>
+						</div>
+				</div>
+			</div>
+
+			<!-- Content section -->
+			<div class="col-12">
+				<div class="contentsection">
+					<div class="row">
+						<div class="col-12">
+							<h1 class="aligncenter">Support us</h1>
+							<form name="signupForm" class="signUp" method="post" onSubmit="return validateForm(this)" onReset="feeReset(this)">
+								E-mail: <input type="text" name="email"> <span id="emailError" class="errorMessage"></span><br>
+								Password: <input type="password" name="pass"> <span id="passError" class="errorMessage"></span><br>
+								Re-type your Password: <input type="password" name="passValidate"> <span id="passValidateError" class="errorMessage"></span><br>
+								Membership type:
+								<input type="radio" name="mType" value="adult" checked="checked" id="adultR"><label for="adultR">Adult</label>
+								<input type="radio" name="mType" value="family" id="familyR"><label for="familyR">Family</label>
+								<input type="radio" name="mType" value="student" id="studentR"><label for="studentR">Student</label>
+								<input type="radio" name="mType" value="concession" id="concessionR"><label for="concessionR">Concession</label><br>
+								Title: <input type="text" name="title"> <span id="titleError" class="errorMessage"></span><br>
+								Family Name:  <input type="text" name="familyName"> <span id="familyNameError" class="errorMessage"></span><br>
+								Given Names:  <input type="text" name="givenName"> <span id="givenNameError" class="errorMessage"></span><br>
+								<div id="familyMembership" class="hidden">
+									Children: <button type="button" onClick="remChild()">-</button> <button type="button" onClick="addChild()">+</button><br>
+									<div id="children">
+										<span id="child1">1: <input type="text" name="childName1"> DOB: <input type="text" name="childDOB1" placeholder="dd/mm/yyyy"> <span id="child1Error" class="errorMessage"></span><br></span>
+										<span id="child2">2: <input type="text" name="childName2"> DOB: <input type="text" name="childDOB2" placeholder="dd/mm/yyyy"> <span id="child2Error" class="errorMessage"></span><br></span>
+										<span id="child3">3: <input type="text" name="childName3"> DOB: <input type="text" name="childDOB3" placeholder="dd/mm/yyyy"> <span id="child3Error" class="errorMessage"></span><br></span>
+										<span id="child4" class="hidden">4: <input type="text" name="childName4"> DOB: <input type="text" name="childDOB4" placeholder="dd/mm/yyyy"> <span id="child4Error" class="errorMessage"></span><br></span>
+										<span id="child5" class="hidden">5: <input type="text" name="childName5"> DOB: <input type="text" name="childDOB5" placeholder="dd/mm/yyyy"> <span id="child5Error" class="errorMessage"></span><br></span>
+										<span id="child6" class="hidden">6: <input type="text" name="childName6"> DOB: <input type="text" name="childDOB6" placeholder="dd/mm/yyyy"> <span id="child6Error" class="errorMessage"></span><br></span>
+										<span id="child7" class="hidden">7: <input type="text" name="childName7"> DOB: <input type="text" name="childDOB7" placeholder="dd/mm/yyyy"> <span id="child7Error" class="errorMessage"></span><br></span>
+										<span id="child8" class="hidden">8: <input type="text" name="childName8"> DOB: <input type="text" name="childDOB8" placeholder="dd/mm/yyyy"> <span id="child8Error" class="errorMessage"></span><br></span>
+										<span id="child9" class="hidden">9: <input type="text" name="childName9"> DOB: <input type="text" name="childDOB9" placeholder="dd/mm/yyyy"> <span id="child9Error" class="errorMessage"></span><br></span>
+										<span id="child10" class="hidden">10: <input type="text" name="childName10"> DOB: <input type="text" name="childDOB10" placeholder="dd/mm/yyyy"> <span id="child10Error" class="errorMessage"></span><br></span>
+									</div>
+								</div>
+								Address: <input type="text" name="address"> <span id="addressError" class="errorMessage"></span><br>
+								Phone number: <input type="text" name="phone"> Mobile: <input type="text" name="mobile"> <span id="phoneError" class="errorMessage"></span><br>
+								Membership Fee: <span id="mCost">$30</span><br>
+								Payment Options: <!-- Paypal only? --><br>
+								How can you help the orchestra?
+								<select name="role" required>
+									<option disabled selected value class="hidden">Choose an option</option>
+									<option value="playing">Playing in the Orchestra or Ensembles</option>
+									<option value="administration">Management or Administration</option>
+									<option value="support">Player Support</option>
+									<option value="fundraising">Fundraising</option>
+									<option value="marketing">Marketing and Promotion</option>
+									<option value="sponsorship">Sponsorship</option>
+									<option value="publishing">Desktop publishing</option>
+									<option value="conducting">Guest Conductor</option>
+								</select>
+								<div id="playerSignup" class="hidden">
+									Instruments played: <input type="text" name="instruments"> <span id="instrumentsError" class="errorMessage"></span><br>
+									Qualifications: <input type="text" name="qualifications"> <span id="qualificationsError" class="errorMessage"></span><br>
+									Experience: <textarea rows="4" cols="50" name="experience"></textarea> <span id="experienceError" class="errorMessage"></span>
+								</div><br>
+								<div id="conductorSignup" class="hidden">
+									CV upload: <input type="file" name="resume"> <span id="resumeError" class="errorMessage"></span><br>
+								</div><br>
+								<input type="reset">
+								<input type="submit" class="signupSubmit" value="Sign up!">
+							</form>
+							<script src="eventListeners.js"></script>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
