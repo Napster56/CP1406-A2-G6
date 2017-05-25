@@ -26,7 +26,7 @@ body {
 
 [class*="col-"] {
 	text-align: center;
-	min-width: 320px;
+	min-width: 350px;
 	display: inline-block;
 	clear: both;
 }
@@ -204,12 +204,12 @@ h3 {
 
 .eventcard {
 	width: 330px;
-	height: 600px;
+	height: 700px;
 }
 
 .eventcard img {
 	width: 300px;
-	height: 450px;
+	height: 430px;
 	border-radius: 15px;
 }
 
