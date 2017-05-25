@@ -83,6 +83,10 @@ row::after {
 	color: rgb(116, 0, 62);
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 						/* offset violin image */
 .offsetleft {
 	position: absolute;
@@ -266,7 +270,7 @@ h3 {
 	max-height: auto;
 	padding: 20px;
 }
-
+									/* List formatting */
 .benefitList li{
 	list-style:none;
 }
