@@ -38,7 +38,6 @@ function closeall(){
 
 function contactmodal() {
   closeNav();
-  closeall();
   document.getElementById("contactmodal").style.display = "block";
 }
 

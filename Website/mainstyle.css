@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 html {
+	max-width: 1920px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -95,12 +96,20 @@ h1 {
 }
 
 a {
+	color: white;
+	text-decoration: none;
 	cursor: pointer;
+}
+
+a:hover {
+	text-shadow: 0 0 10px white;
+	color: #e1e3da;
 }
 
 h3 {
 	margin: 2px;
 }
+
 
 /* containers */
 
@@ -246,11 +255,17 @@ h3 {
 .cardgallery img {
 	margin: none;
 	padding: 10px 0px 10px 0px;
-	width: auto;
+	height: auto;
 	width: 400px;
 	border-radius: 15px;
 }
 
+									/* Contains large images */
+#imageviewer {
+	max-width: 1880px;
+	max-height: auto;
+	padding: 20px;
+}
 
 									/* Modal for extra artist info */
 
