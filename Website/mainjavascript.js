@@ -55,8 +55,4 @@ function artistmodal5() {
   document.getElementById("artistmodal5").style.display = "block";
 }
 
-span.onclick = closeall();
-
-window.onclick = closeall() closeNav();
-
 window.onload = closeall();

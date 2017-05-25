@@ -221,10 +221,10 @@ h3 {
 .modal-content {
     background-color: #fefefe;
     margin: 1% auto;
-    padding: 40px 10% 20px;
+    padding: 40px 40px 20px;
     border: 1px solid #888;
 		border-radius: 15px;
-		width: 80%;
+		width: 90%;
     max-width: 1000px;
 }
 
