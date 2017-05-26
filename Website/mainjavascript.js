@@ -1,19 +1,20 @@
 // media query event handler
 if (matchMedia) {
-  var mq = window.matchMedia("(min-width: 1270px)");
-  mq.addListener(WidthChange);
-  WidthChange(mq);
+  var mqw = window.matchMedia("(min-width: 1270px)");
+  var mqh = window.matchMedia("(min-height: 770px)");
+  mqw.addListener(WidthChange);
+  mqh.addListener(HeightChange);
+  MediaChange(mqw, mqh);
 }
 
 // media query change
-function WidthChange(mq) {
-  if (mq.matches) {
+function MediaChange(mqw, mqh) {
+  if (mqw.matches && mqh.matches) {
     openNav();
   } else {
     closeNav();
     document.getElementById("navBox").style.width = "100%";
   }
-
 }
 
 
@@ -31,7 +32,7 @@ function openNav() {
 
 // Close navigation bar. Move evrything to default position
 function closeNav() {
-  if (mq.matches) {document.getElementById("navBox").style.width = "240px";}
+  if (mqw.matches && mqh.matches) {document.getElementById("navBox").style.width = "240px";}
   document.getElementById("navImg").style.marginLeft = "0px";
   document.getElementById("navBtn-1").style.marginLeft = "0px";
   document.getElementById("navBtn-2").style.marginLeft = "0px";
