@@ -11,7 +11,6 @@ function WidthChange(mq) {
     openNav();
   } else {
     closeNav();
-    document.getElementById("navBtns").style.width = "100%";
     document.getElementById("navBox").style.width = "100%";
   }
 
@@ -32,7 +31,7 @@ function openNav() {
 
 // Close navigation bar. Move evrything to default position
 function closeNav() {
-  document.getElementById("navBox").style.width = "240px";
+  if (mq.matches) {document.getElementById("navBox").style.width = "240px";}
   document.getElementById("navImg").style.marginLeft = "0px";
   document.getElementById("navBtn-1").style.marginLeft = "0px";
   document.getElementById("navBtn-2").style.marginLeft = "0px";
