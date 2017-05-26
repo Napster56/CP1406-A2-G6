@@ -2,67 +2,79 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Barrier Reef Orchestra - Support Us</title>
+		<title>Barrier Reef Orchestra - About Us</title>
+		<meta property="description"
+					content="The Barrier Reef Orchestra is a community orchestra located in Townsville, North Queensland, Australia.">
+		<meta name="keywords"
+					content="orchestra, music concerts, classical concerts, classical music, musicians, community orchestra, concerts in North Queensland, concerts in Townsville">
+		<meta property="og:type" content="article"/>
+		<meta property="og:url" content="http://nqorchestra.com.au/"/>
+		<meta property="og:site_name" content="Barrier Reef Orchestra"/>
+		<meta property="og:title" content="Barrier Reef Orchestra - Home"/>
+		<meta property="og:description"
+					content="Barrier Reef Orchestra is a Community Orchestra located in Townsville, North Queensland, Australia"/>
 		<link href="mainstyle.css" rel="stylesheet" type="text/css">
+		<link href="accordian_button_style.css" rel="stylesheet" type="text/css">
 		<script src="mainjavascript.js"></script>
 		<script src="formValidation.js"></script>
 	</head>
 
 	<body background="images/background03.jpg">
 
-			<!-- Grids for entire page -->
-			<div class="row">
+		<!-- Grids for entire page -->
+		<div class="row">
 
-				<!-- header -->
-				<div class="col-12">
-					<div id="header">
-					<div class="row">
-							<!-- Logo -->
-							<div class="col-3 alignleft">
-								<a href="index.html"><img src="images/logo.png"></a>
-							</div>
-							<!-- Call to action -->
-							<div class="col-4" style="float:right;">
-								<h1>Call to action</h1>
-								<div class="headernav alignright"><a onclick="contactmodal()">Contact Us</a></div>
-							</div>
-							<!-- announcements -->
-							<div class="col-4" style="float:center;">
-								<h1>announcements</h1>
-							</div>
+			<!-- header -->
+			<div class="col-12">
+				<div id="header">
+				<div class="row">
+						<!-- Logo -->
+						<div class="col-3 alignleft">
+							<a href="index.html"><img src="images/logo.png"></a>
+						</div>
+						<!-- Call to action -->
+						<div class="col-4 floatright">
+							<h1>Call to action</h1>
+							<div class="headernav alignright"><a onclick="contactmodal()">Contact Us</a></div>
+						</div>
+						<!-- announcements -->
+						<div class="col-4 floatcenter">
+							<h1>announcements</h1>
 						</div>
 					</div>
 				</div>
+			</div>
 
-				<!-- Navigation bar container -->
-				<div class="col-nav">
-					<div id="navBox" class="navbar">
-						<a id="navImg" onclick="closeNav()"><img class="offsetleft" src="images/violinring.png"></a>	<!-- violin image for navigation bar -->
-						<a onmouseover="openNav()" onclick="closeNav()" class="invisiblebtn" style="padding: 20px 20px 500px 10px;"></a>		<!-- Invisible button nav bar -->
-							<div class="navbtns">
-								<a id="navBtn-1" onclick="closeNav()" href="javascript:delay('aboutus.html')">About Us</a>
-								<a id="navBtn-2" onclick="closeNav()" href="javascript:delay('concerts.html')" >Concerts</a>
-								<a id="navBtn-3" onclick="closeNav()" href="javascript:delay('supportus.html')">Support Us &gt;&gt;</a>
-								<a id="navBtn-4" onclick="closeNav()" href="javascript:delay('artists.html')">Artists</a>
-								<a id="navBtn-5" onclick="closeNav()" href="javascript:delay('gallery.html')">Gallery</a>
-							</div>
+			<!-- Modal for contact info -->
+			<div id="contactmodal" class="modal">
+				<div class="modal-content">
+					<a onclick="closeall()" class="close">&times;</a>
+					<div class="aligncenter">
+						<h2 class="txtred">Contact US</h2>
+						<h3>Barrier Reef Orchestra</h3>
+						<h3>PO Box 576, Townsville  Qld  4810</h3>
+						<br>
+						<h3><span class="txtred">Phone:</span> +61 7 47 222 789</h3>
+						<h3><span class="txtred">Email:</span>  brotownsville@gmail.com</h3>
+						<br>
 					</div>
 				</div>
-				<!-- Modal for contact info -->
-				<div id="contactmodal" class="modal">
-					<div class="modal-content">
-						<a onclick="closeall()" class="close">&times;</a>
-						<div class="aligncenter">
-							<h2 class="txtred">Contact US</h2>
-							<h3>Barrier Reef Orchestra</h3>
-							<h3>PO Box 576, Townsville  Qld  4810</h3>
-							<br>
-							<h3><span class="txtred">Phone:</span> +61 7 47 222 789</h3>
-							<h3><span class="txtred">Email:</span>  brotownsville@gmail.com</h3>
-							<br>
+			</div>
+
+			<!-- Navigation bar container -->
+			<div class="col-nav floatleft">
+				<div id="navBox" class="navbar">
+					<a id="navImg" onclick="closeNav()"><img class="offsetleft" src="images/violinring.png"></a>	<!-- violin image for navigation bar -->
+					<a id="invisibleBtn" onmouseover="WidthChange()" onclick="closeNav()" class="invisiblebtn" style="padding: 20px 20px 500px 10px;"></a>		<!-- Invisible button nav bar -->
+						<div class="navbtns">
+							<a id="navBtn-1" onclick="closeNav()" href="javascript:delay('aboutus.html')">About Us</a>
+							<a id="navBtn-2" onclick="closeNav()" href="javascript:delay('concerts.html')" >Concerts</a>
+							<a id="navBtn-3" onclick="closeNav()" href="javascript:delay('supportus.html')">Support Us</a>
+							<a id="navBtn-4" onclick="closeNav()" href="javascript:delay('artists.html')">Artists</a>
+							<a id="navBtn-5" onclick="closeNav()" href="javascript:delay('gallery.html')">Gallery</a>
 						</div>
-					</div>
 				</div>
+			</div>
 
 			<!-- Content section -->
 			<div class="col-12">

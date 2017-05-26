@@ -20,7 +20,7 @@ body {
 
 @media only screen and (min-width: 700px)
 {
-	overflow: hidden;
+	body{overflow: hidden;}
 }
 
 /* Grids allows for responsive design */
@@ -221,17 +221,24 @@ h3 {
 #header {
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.7);
-	position: fixed;
 	margin-top: -30px;
-	margin-left: -20px;
+}
+
+@media only screen and (min-width: 700px)
+{
+	#header{position: fixed; margin-left: -20px;}
 }
 
 #header div {
 	margin-top: 10px;
 }
 
+@media only screen and (min-width: 700px)
+{
+	.headernav{text-align: right;}
+}
+
 .headernav {
-	text-align: right;
 	display: inline;
 }
 
@@ -352,8 +359,8 @@ h3 {
 
 .modal {
 	margin-left: 0px;
-	margin-top: 190px;
-	position: absolute;
+	margin-top: 0px;
+	position: relative;
 	display: none;
 	left: 0px;
 	top: 0px;
@@ -362,6 +369,10 @@ h3 {
 	height: 100%;
 	overflow: auto;
 	text-align: center;
+}
+@media only screen and (min-width: 700px)
+{
+	.modal{position: absolute; margin-top: 190px;}
 }
 
 									/* Modal Content/Box */
