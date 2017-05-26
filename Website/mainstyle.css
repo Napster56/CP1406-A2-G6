@@ -18,11 +18,6 @@ body {
 
 }
 
-@media only screen and (min-width: 700px)
-{
-	body{overflow: hidden;}
-}
-
 /* Grids allows for responsive design */
 
 *{
@@ -57,33 +52,6 @@ row::after {
 
 
 /* classes for alignments */
-@media only screen and (min-width: 700px)
-{
-	.floatleft {
-		float: left;
-	}
-
-	.floatcenter {
-		float: center;
-	}
-
-	.callToAction {
-		float: right;
-	}
-
-	.alignright {
-		text-align: right;
-		padding: 0px 10px 0px 10px;
-	}
-	.alignleft {
-		text-align: left;
-	}
-
-	.floatright {
-		float: right;
-	}
-
-}
 
 .aligncenter {
 	text-align: center;
@@ -167,10 +135,6 @@ h3 {
 	overflow: hidden;
 }
 
-@media only screen and (min-width: 700px)
-{
-	.navbar{width: 240px; height: 100%; top: 175px; z-index: 1; position: fixed; text-align: left; padding-top: 20px; margin-left: -10px}
-}
 					/* navigation bar buttons */
 .navbar a {
 	transition: 0.3s;
@@ -197,11 +161,6 @@ h3 {
 	display: block;
 }
 
-@media only screen and (min-width: 700px)
-{
-	.navbtns {margin-top: 70px;}
-}
-
 					/* buttons inside navbtns container */
 .navbtns a {
 	display: block;
@@ -209,11 +168,6 @@ h3 {
 
 #navImg {
 	display: none;
-}
-
-@media only screen and (min-width: 700px)
-{
-    #navImg{ display:block; }
 }
 
 					/* invisible button for opening nav bar on mouse over */
@@ -224,35 +178,15 @@ h3 {
 	display: run-in;
 }
 
-@media only screen and (max-width: 700px)
-{
-	.invisiblebtn{ left: -500px; display: none;}
-}
-
-@media only screen and (min-width: 700px)
-{
-    .invisiblebtn{ z-index: 1;}
-}
-
-
 					/* header */
 #header {
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.7);
 }
 
-@media only screen and (min-width: 700px)
-{
-	#header{position: fixed; margin-left: -20px; margin-top: -30px;}
-}
 
 #header div {
 	margin-top: 10px;
-}
-
-@media only screen and (min-width: 700px)
-{
-	.headernav{text-align: right;}
 }
 
 .headernav {
@@ -279,15 +213,6 @@ h3 {
 	min-width: 400px;
 }
 
-@media only screen and (min-width: 700px)
-{
-	.contentsection {
-		margin-left: 250px;
-		margin-top: 160px;
-		overflow-y:auto;
-		height: 800px;
-	}
-}
 .padd {
 	padding: 20px;
 }
@@ -387,10 +312,6 @@ h3 {
 	overflow: auto;
 	text-align: center;
 }
-@media only screen and (min-width: 700px)
-{
-	.modal{position: absolute; margin-top: 190px;}
-}
 
 									/* Modal Content/Box */
 .modal-content {
@@ -444,4 +365,59 @@ h3 {
 
 #signUpTable tr #formControls {
 	text-align:center;
+}
+
+@media only screen and (min-width: 1024px)
+{
+	body{overflow: hidden;}
+
+	.floatleft {
+		float: left;
+	}
+
+	.floatcenter {
+		float: center;
+	}
+
+	.callToAction {
+		float: right;
+	}
+
+	.alignright {
+		text-align: right;
+		padding: 0px 10px 0px 10px;
+	}
+	.alignleft {
+		text-align: left;
+	}
+
+	.floatright {
+		float: right;
+	}
+
+	.navbar{width: 240px; height: 100%; top: 175px; z-index: 1; position: fixed; text-align: left; padding-top: 20px; margin-left: -10px}
+
+	.navbtns {margin-top: 70px;}
+
+	#navImg{ display:block; }
+
+	.invisiblebtn{ z-index: 1;}
+
+	#header{position: fixed; margin-left: -20px; margin-top: -30px;}
+
+	.headernav{text-align: right;}
+
+	.contentsection {
+		margin-left: 250px;
+		margin-top: 150px;
+		overflow-y:auto;
+		height: 800px;
+	}
+
+	.modal{position: absolute; margin-top: 190px; overflow-y: auto; height: 790px;}
+}
+
+@media only screen and (max-width: 1024px)
+{
+	.invisiblebtn{ left: -500px; display: none;}
 }
