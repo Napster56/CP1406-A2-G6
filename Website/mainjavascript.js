@@ -1,3 +1,23 @@
+// media query event handler
+if (matchMedia) {
+  var mq = window.matchMedia("(min-width: 700px)");
+  mq.addListener(WidthChange);
+  WidthChange(mq);
+}
+
+// media query change
+function WidthChange(mq) {
+  if (mq.matches) {
+    openNav();
+  } else {
+    closeNav();
+    document.getElementById("navBtns").style.width = "100%";
+    document.getElementById("navBox").style.width = "100%";
+  }
+
+}
+
+
 // Open navigation bar and posiotion top center
 function openNav() {
   document.getElementById("navBox").style.width = "100%";					// expand nav bar
