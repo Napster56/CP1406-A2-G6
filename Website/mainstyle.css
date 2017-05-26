@@ -367,7 +367,9 @@ h3 {
 	text-align:center;
 }
 
-@media only screen and (min-width: 1024px)
+/* Media querries */
+
+@media only screen and (min-width: 1270px) and (min-height: 770px)
 {
 	body{overflow: hidden;}
 
@@ -395,7 +397,7 @@ h3 {
 		float: right;
 	}
 
-	.navbar{width: 240px; height: 100%; top: 175px; z-index: 1; position: fixed; text-align: left; padding-top: 20px; margin-left: -10px}
+	.navbar{width: 240px; height: 100%; top: 161px; z-index: 1; position: fixed; text-align: left; padding-top: 20px; margin-left: -10px}
 
 	.navbtns {margin-top: 70px;}
 
@@ -409,7 +411,7 @@ h3 {
 
 	.contentsection {
 		margin-left: 250px;
-		margin-top: 150px;
+		margin-top: 142px;
 		overflow-y:auto;
 		height: 800px;
 	}
@@ -417,7 +419,7 @@ h3 {
 	.modal{position: absolute; margin-top: 190px; overflow-y: auto; height: 790px;}
 }
 
-@media only screen and (max-width: 1024px)
+@media only screen and (max-width: 1270px) and (min-height: 770px)
 {
 	.invisiblebtn{ left: -500px; display: none;}
 }

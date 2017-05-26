@@ -1,6 +1,6 @@
 // media query event handler
 if (matchMedia) {
-  var mq = window.matchMedia("(min-width: 700px)");
+  var mq = window.matchMedia("(min-width: 1270px)");
   mq.addListener(WidthChange);
   WidthChange(mq);
 }
