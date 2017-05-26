@@ -99,7 +99,8 @@ row::after {
 }
 
 .ctaButton {
-	font-size: 40px;
+	font-size: 30px;
+	width: 200px;
 	font-family: 'Pacifico', cursive;
 	border-radius:15px;
 	background-color:#fefefe;
