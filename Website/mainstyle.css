@@ -219,9 +219,14 @@ h3 {
 	display: run-in;
 }
 
+@media only screen and (max-width: 700px)
+{
+	.invisiblebtn{ left: -500px; display: none;}
+}
+
 @media only screen and (min-width: 700px)
 {
-    .invisiblebtn{ z-index: 1; }
+    .invisiblebtn{ z-index: 1;}
 }
 
 
