@@ -114,6 +114,23 @@ h3 {
 	margin: 2px;
 }
 
+.arrowhover a span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.arrowhover a:hover span {
+  padding-right: 20px;
+}
+
+.arrowhover a:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 
 /* containers */
 
@@ -145,7 +162,7 @@ h3 {
 }
 
 .navbar  a:hover{
-    color: #e1e3da;
+  color: #e1e3da;
 	font-size: 22px;
 	padding: 19px 29px 19px 29px;
 	text-shadow: 0 0 10px white;
@@ -238,6 +255,22 @@ h3 {
 .cardinfo {
 	padding: 0px;
 	color: rgba(36, 0, 91, 1);
+}
+
+.cardinfo a {
+	transition: all 0.5s;
+	color: rgba(36, 0, 91, 1);
+}
+
+.cardinfo a span:hover {
+	text-shadow: 0 0 10px blue;
+}
+
+.cardinfo a span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
 .eventcard {
