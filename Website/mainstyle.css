@@ -130,6 +130,7 @@ h3 {
 					/* contains navigation bar */
 .navbar {
 	width: 100%;
+	max-width: 1920px;
 	background-color: rgba(0, 0, 0, 0.7);
 	transition: 0.3s;
 	overflow: hidden;
