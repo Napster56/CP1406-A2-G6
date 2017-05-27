@@ -212,10 +212,12 @@ h3 {
 	background-color: rgba(0, 0, 0, 0.7);
 	text-align: center;
 	min-width: 400px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .padd {
-	padding: 20px;
+	padding: 20px 0px 20px 0px;
 }
 
 /* Card and modal for artists info */
@@ -415,9 +417,11 @@ h3 {
 		margin-top: 142px;
 		overflow-y:auto;
 		height: 800px;
+		padding-left: 50px;
+		padding-right: 50px;
 	}
 
-	.modal{position: absolute; margin-top: 190px; overflow-y: auto; height: 790px;}
+	.modal{position: absolute; margin-top: 170px; overflow-y: auto; height: 590px;}
 }
 
 @media only screen and (max-width: 1270px) and (min-height: 770px)
