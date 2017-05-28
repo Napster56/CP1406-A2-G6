@@ -1,453 +1,528 @@
 @charset "utf-8";
-/* CSS Document */
-
+/* CSS Document for Barrier Reef Orchestra website */
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 html {
-	max-width: 1920px;
-	margin-left: auto;
-	margin-right: auto;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body {
-	background-color: black;
-	background-repeat: no-repeat;
-	font-family: "Lato", sans-serif;
-	color: white;
-	font-size: 20px;
+    background: black no-repeat;
+    font-family: "Lato", sans-serif;
+    color: white;
+    font-size: 20px;
 }
 
 #backround-index {
-	background-image: url("images/background01.jpg");
+    background-image: url("images/background01.jpg");
 }
 
 #backround-aboutus {
-	background-image: url("images/background02.jpg");
+    background-image: url("images/background02.jpg");
 }
 
 #backround-concerts {
-	background-image: url("images/background03.jpg");
+    background-image: url("images/background03.jpg");
 }
 
 #backround-supportus {
-	background-image: url("images/background04.jpg");
+    background-image: url("images/background04.jpg");
 }
 
 #backround-artists {
-	background-image: url("images/background05.jpg");
+    background-image: url("images/background05.jpg");
 }
 
 #backround-gallery {
-	background-image: url("images/background06.jpg");
+    background-image: url("images/background06.jpg");
 }
 
 /* Grids allows for responsive design */
 
-*{
-	box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
 
 [class*="col-"] {
-	text-align: center;
-	display: inline-grid;
-	clear: both;
+    text-align: center;
+    display: inline-grid;
+    clear: both;
 }
 
 row::after {
-	content: "";
-	display: table;
-	text-align: center;
+    content: "";
+    display: table;
+    text-align: center;
 }
 
-.col-nav {width: 100%;}
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%; min-width: 250px;}
-.col-3 {width: 25%; min-width: 350px;}
-.col-4 {width: 33.33%; min-width: 450px;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.col-nav {
+    width: 100%;
+}
 
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+    min-width: 250px;
+}
+
+.col-3 {
+    width: 25%;
+    min-width: 350px;
+}
+
+.col-4 {
+    width: 33.33%;
+    min-width: 450px;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
 
 /* classes for alignments */
 
 .aligncenter {
-	text-align: center;
+    text-align: center;
 }
 
 .txtwhite {
-	text-shadow: 2px 2px 5px #000000;
-	font-size: 120%;
-	color: white;
+    text-shadow: 2px 2px 5px #000000;
+    font-size: 120%;
+    color: white;
 }
 
 .txtred {
-	color: rgb(116, 0, 62);
+    color: rgb(116, 0, 62);
 }
 
 .ctaButton {
-	font-size: 30px;
-	width: 200px;
-	font-family: 'Pacifico', cursive;
-	border-radius:15px;
-	background-color:#fefefe;
-	padding-bottom:10px;
+    font-size: 30px;
+    width: 200px;
+    font-family: 'Pacifico', cursive;
+    border-radius: 15px;
+    background-color: #fefefe;
+    padding-bottom: 10px;
 }
 
 .uppercase {
-  text-transform: uppercase;
+    text-transform: uppercase;
+    text-align: left;
 }
 
-						/* offset violin image */
+/* offset violin image */
 .offsetleft {
-	position: absolute;
-	left: -300px;
+    position: absolute;
+    left: -300px;
 }
 
 /* regular tags */
 h1 {
-	font-size: 40px;
-	font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
 }
 
 a {
-	color: white;
-	text-decoration: none;
-	cursor: pointer;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 a:hover {
-	text-shadow: 0 0 10px white;
-	color: #e1e3da;
+    text-shadow: 0 0 10px white;
+    color: #e1e3da;
 }
 
 h3 {
-	margin: 2px;
+    margin: 2px;
 }
 
 .arrowhover a span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
 }
 
 .arrowhover a:hover span {
-  padding-right: 20px;
+    padding-right: 20px;
 }
 
 .arrowhover a:hover span:after {
-  opacity: 1;
-  right: 0;
+    opacity: 1;
+    right: 0;
 }
 
 /* containers */
 
-					/* contains navigation bar */
+/* contains navigation bar */
 .navbar {
-	width: 100%;
-	max-width: 1920px;
-	background-color: rgba(0, 0, 0, 0.7);
-	transition: 0.3s;
-	overflow: hidden;
+    width: 100%;
+    max-width: 1920px;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+    overflow: hidden;
 }
 
-					/* navigation bar buttons */
+/* navigation bar buttons */
 .navbar a {
-	transition: 0.3s;
-	position: relative;
-	padding: 20px 30px 20px 30px;
-	text-decoration: none;
-	font-size: 20px;
-	color: white;
-	text-shadow: 0 0 10px black;
-	text-align: center;
-	font-family: 'Pacifico', cursive;
+    transition: 0.3s;
+    position: relative;
+    padding: 20px 30px 20px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
 }
 
-.navbar  a:hover{
-  color: #e1e3da;
-	font-size: 22px;
-	padding: 19px 29px 19px 29px;
-	text-shadow: 0 0 10px white;
+.navbar a:hover {
+    color: #e1e3da;
+    font-size: 22px;
+    padding: 19px 29px 19px 29px;
+    text-shadow: 0 0 10px white;
 }
 
-					 /* contains buttons for navigation bar */
+/* contains buttons for navigation bar */
 .navbtns {
-	text-align: left;
-	display: block;
+    text-align: left;
+    display: block;
 }
 
-					/* buttons inside navbtns container */
+/* buttons inside navbtns container */
 .navbtns a {
-	display: block;
+    display: block;
 }
 
 #navImg {
-	display: none;
+    display: none;
 }
 
-					/* invisible button for opening nav bar on mouse over */
+/* invisible button for opening nav bar on mouse over */
 .invisiblebtn {
-	top: 30px;
-	z-index: 0;
-	left: 0px;
-	display: run-in;
+    top: 30px;
+    z-index: 0;
+    left: 0;
+    display: run-in;
 }
 
-					/* header */
+/* header */
 #header {
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
 }
-
 
 #header div {
-	margin-top: 10px;
+    margin-top: 10px;
 }
 
 .headernav {
-	display: inline;
+    display: inline;
 }
 
 .headernav a {
-	font-size: 16px;
-	color: white;
-	padding: 0px 10px 0px 10px;
-	text-shadow: 0 0 10px black;
-	font-family: 'Pacifico', cursive;
+    font-size: 16px;
+    color: white;
+    padding: 0 10px 0 10px;
+    text-shadow: 0 0 10px black;
+    font-family: 'Pacifico', cursive;
 }
 
 .headernav a:hover {
-	text-shadow: 0 0 10px white;
-	color: #e1e3da;
+    text-shadow: 0 0 10px white;
+    color: #e1e3da;
 }
 
-					/* contains col's for all page content */
+/* contains col's for all page content */
 .contentsection {
-	background-color: rgba(0, 0, 0, 0.7);
-	text-align: center;
-	min-width: 400px;
-	padding-left: 10px;
-	padding-right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    min-width: 400px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .padd {
-	padding: 20px 0px 20px 0px;
+    padding: 20px 0 20px 0;
 }
 
 /* Card and modal for artists info */
 
-									/* Card for artist info */
+/* Card for artist info */
 .card {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	background-color: white;
- 	width: 200px;
-	height: 340px;
-	margin: 20px;
-	text-align: center;
-	border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    width: 200px;
+    height: 340px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 15px;
 }
 
 .card img {
-	margin: 10px 0px 0;
-	width: 180px;
-	height: 230px;
-	border-radius: 15px;
+    margin: 10px 0 0;
+    width: 180px;
+    height: 230px;
+    border-radius: 15px;
 }
 
 .cardinfo {
-	padding: 0px;
-	color: rgba(36, 0, 91, 1);
+    padding: 0;
+    color: rgba(36, 0, 91, 1);
 }
 
 .cardinfo a {
-	transition: all 0.5s;
-	color: rgba(36, 0, 91, 1);
+    transition: all 0.5s;
+    color: rgba(36, 0, 91, 1);
 }
 
 .cardinfo a span:hover {
-	text-shadow: 0 0 10px blue;
+    text-shadow: 0 0 10px blue;
 }
 
 .cardinfo a span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
 }
 
 .eventcard {
-	width: 330px;
-	height: 700px;
+    width: 330px;
+    height: 700px;
 }
 
 .eventcard img {
-	width: 300px;
-	height: 430px;
-	border-radius: 15px;
+    width: 300px;
+    height: 430px;
+    border-radius: 15px;
 }
 
 .cardgallery {
-	width: auto;
-	height: auto;
+    width: auto;
+    height: auto;
 }
 
 .cardgallery img {
-	margin: none;
-	padding: 10px 0px 10px 0px;
-	height: auto;
-	width: 400px;
-	border-radius: 15px;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    height: auto;
+    width: 400px;
+    border-radius: 15px;
 }
 
-									/* Contains large images */
+/* Contains large images */
 #imageviewer {
-	max-width: 1880px;
-	max-height: auto;
-	padding: 20px;
-}
-									/* List formatting */
-.benefitList li{
-	list-style:none;
-}
-.benefitList li:before{
-	content: "•";
-	padding-right: 5px;
+    max-width: 1880px;
+    max-height: auto;           <!-- TODO  	Value Error : max-height Too many values or values are not recognized : auto  -->
+    padding: 20px;
 }
 
-									/* Modal for extra artist info */
+/* List formatting */
+.benefitList li {
+    list-style: none;
+    text-align: left;
+}
+
+.benefitList li:before {
+    content: "•";
+    padding-right: 5px;
+}
+
+/* Modal for extra artist info */
 
 .modal {
-	margin-left: 0px;
-	margin-top: 0px;
-	position: relative;
-	display: none;
-	left: 0px;
-	top: 0px;
-	z-index: 1;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-	text-align: center;
+    margin-left: 0;
+    margin-top: 0;
+    position: relative;
+    display: none;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
 }
 
-									/* Modal Content/Box */
+/* Modal Content/Box */
 .modal-content {
-	background-color: #fefefe;
-	color: rgba(36, 0, 91, 1);
-	margin: 1% auto;
-	padding: 40px 40px 20px;
-	border: 1px solid #888;
-	border-radius: 15px;
-	width: 90%;
-	max-width: 1000px;
+    background-color: #fefefe;
+    color: rgba(36, 0, 91, 1);
+    margin: 1% auto;
+    padding: 40px 40px 20px;
+    border: 1px solid #888;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 1000px;
 }
 
-									/* Close Button */
+/* Close Button */
 .close {
-	color: #aaa;
-	float: right;
-	font-size: 28px;
-	font-weight: bold;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-	color: black;
-	text-decoration: none;
-	cursor: pointer;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* Form CSS */
-.hidden {							/* form module display */
-	display:none;
+.hidden { /* form module display */
+    display: none;
 }
 
 .error {
-	border-color: red;
+    border-color: red;
 }
 
 .errorMessage {
-	color: red;
-	font-size: 10px;
+    color: red;
+    font-size: 10px;
 }
+
 #signUpTable {
-	margin:0 auto;
-	background-color:lightblue; /*this whole selector is to be changed or removed*/
-	border-radius:15px;
+    margin: 0 auto;
+    color: rgba(36, 0, 91, 1);;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px
 }
+
 #signUpTable tr td {
-	text-align:left;
-	min-width:175px;
+    text-align: left;
+    min-width: 175px;
 }
 
 #signUpTable tr #formControls {
-	text-align:center;
+    text-align: center;
 }
 
 /* Media querries */
 
-@media only screen and (min-width: 1270px) and (min-height: 770px)
-{
-	body{overflow: hidden;}
+@media only screen and (min-width: 1270px) and (min-height: 770px) {
+    body {
+        overflow: hidden;
+    }
 
-	.floatleft {
-		float: left;
-	}
+    .floatleft {
+        float: left;
+    }
 
-	.floatcenter {
-		float: center;
-	}
+    .floatcenter {
+        float: center;     <!-- TODO Value Error : float center is not a float value : center -->
+    }
 
-	.callToAction {
-		float: right;
-	}
+    .callToAction {
+        float: right;
+    }
 
-	.alignright {
-		text-align: right;
-		padding: 0px 10px 0px 10px;
-	}
-	.alignleft {
-		text-align: left;
-	}
+    .alignright {
+        text-align: right;
+        padding: 0 10px 0 10px;
+    }
 
-	.floatright {
-		float: right;
-	}
+    .alignleft {
+        text-align: left;
+    }
 
-	.navbar{width: 240px; height: 100%; top: 161px; z-index: 1; position: fixed; text-align: left; padding-top: 20px; margin-left: -10px}
+    .floatright {
+        float: right;
+    }
 
-	.navbtns {margin-top: 70px;}
+    .navbar {
+        width: 240px;
+        height: 100%;
+        top: 161px;
+        z-index: 1;
+        position: fixed;
+        text-align: left;
+        padding-top: 20px;
+        margin-left: -10px
+    }
 
-	#navImg{ display:block; }
+    .navbtns {
+        margin-top: 70px;
+    }
 
-	.invisiblebtn{ z-index: 1;}
+    #navImg {
+        display: block;
+    }
 
-	#header{position: fixed; margin-left: -20px; margin-top: -30px;}
+    .invisiblebtn {
+        z-index: 1;
+    }
 
-	.headernav{text-align: right;}
+    #header {
+        position: fixed;
+        margin-left: -20px;
+        margin-top: -30px;
+    }
 
-	.contentsection {
-		margin-left: 250px;
-		margin-top: 142px;
-		overflow-y:auto;
-		height: 800px;
-		padding-left: 50px;
-		padding-right: 50px;
-	}
+    .headernav {
+        text-align: right;
+    }
 
-	.modal{position: absolute; margin-top: 170px; overflow-y: auto; height: 590px;}
+    .contentsection {
+        margin-left: 250px;
+        margin-top: 142px;
+        overflow-y: auto;
+        height: 800px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .modal {
+        position: absolute;
+        margin-top: 170px;
+        overflow-y: auto;
+        height: 590px;
+    }
 }
 
-@media only screen and (max-width: 1270px) and (min-height: 770px)
-{
-	.invisiblebtn{ left: -500px; display: none;}
+@media only screen and (max-width: 1270px) and (min-height: 770px) {
+    .invisiblebtn {
+        left: -500px;
+        display: none;
+    }
 }
