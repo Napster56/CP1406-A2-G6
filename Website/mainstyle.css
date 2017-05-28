@@ -165,6 +165,11 @@ a:hover {
     color: #e1e3da;
 }
 
+a.link {
+    text-decoration: underline;
+    color: rgba(109, 139, 4, 1);
+}
+
 h3 {
     margin: 2px;
 }
