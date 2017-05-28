@@ -15,7 +15,30 @@ body {
 	font-family: "Lato", sans-serif;
 	color: white;
 	font-size: 20px;
+}
 
+#backround-index {
+	background-image: url("images/background01.jpg");
+}
+
+#backround-aboutus {
+	background-image: url("images/background02.jpg");
+}
+
+#backround-concerts {
+	background-image: url("images/background03.jpg");
+}
+
+#backround-supportus {
+	background-image: url("images/background04.jpg");
+}
+
+#backround-artists {
+	background-image: url("images/background05.jpg");
+}
+
+#backround-gallery {
+	background-image: url("images/background06.jpg");
 }
 
 /* Grids allows for responsive design */
