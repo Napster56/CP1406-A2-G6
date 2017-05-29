@@ -24,30 +24,35 @@
 <!-- Grids for entire page -->
 <div class="row">
 
-    <!-- header -->
-    <div class="col-12">
-        <div id="header">
-            <div class="row">
-                <!-- Logo -->
-                <div class="col-3 alignleft">
-                    <a href="index.html"><img src="images/logo.png" alt="Go to home"></a>
-                </div>
-                <!-- Call to action -->
-                <div class="col-4 floatright">
-                    <div class="aligncenter">
-                        <button type="button" class="ctaButton" onClick="parent.location='supportus.html'">Support Us
-                        </button>
-                    </div>
-                    <div class="headernav alignright"><a onclick="contactmodal()">Contact Us</a></div>
-                </div>
-                <!-- bulletin board -->
-                <div class="col-4 aligncenter">
-                    <button type="button" class="ctaButton" onClick="parent.location='bulletinboard.html'">Bulletin Board
-                    </button>
-                </div>
-            </div>
+  <!-- header -->
+  <div class="col-12">
+    <div id="header">
+    <div class="row">
+        <!-- Logo -->
+        <div class="col-3 alignleft">
+          <div>
+            <a href="index.html"><img src="images/logo.png" alt="Go to home"></a>
+          </div>
+          <!-- Buy tickets -->
         </div>
+          <div class="col-4 aligncenter">
+            <div class="aligncenter"><button class="ctaButton" onclick="https://whatson.townsville.qld.gov.au/events/community-events">Buy tickets</button></div>
+          </div>
+        <!-- Call to action -->
+        <div class="col-4">
+            <div class="aligncenter">
+              <button type="button" class="ctaButton" onClick="parent.location='supportus.html'">Support Us</button>
+            </div>
+          <div class="headernav alignright">
+            <!-- Bulletin board -->
+            <a href="bulletinboard.html">Bulletin Board</a>
+            <!-- Contact us -->
+            <a onclick="contactmodal()">Contact Us</a>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
     <!-- Modal for contact info -->
     <div id="contactmodal" class="modal">
@@ -68,8 +73,7 @@
     <!-- Navigation bar container -->
     <div class="col-nav floatleft">
         <div id="navBox" class="navbar">
-            <a id="navImg" onclick="closeNav()"><img class="offsetleft" src="images/violinring.png" alt="violin ring">
-                                                     alt="violin ring"></a>    <!-- violin image for navigation bar -->
+            <a id="navImg" onclick="closeNav()"><img class="offsetleft" src="images/violinring.png" alt="violin ring" alt="violin ring"></a>    <!-- violin image for navigation bar -->
             <a id="invisibleBtn" onmouseover="MediaChange(mqw, mqh)" onclick="closeNav()" class="invisiblebtn"
                style="padding: 20px 20px 500px 10px;"></a>        <!-- Invisible button nav bar -->
             <div class="navbtns">
@@ -86,12 +90,10 @@
     <div class="col-12">
         <div class="contentsection">
             <div class="row">
-                <div class="col-8">
-                    <h1 class="aligncenter">Support us</h1>
-                    <!-- Button with link to buy tickets -->
-                    <form action="https://whatson.townsville.qld.gov.au/events/community-events" method="get">
-                        <button class="ctaButton">Buy tickets</button>
-                    </form>
+                <div class="col-12">
+                    <h1 >Support us</h1>
+                </div>
+                <div class="col-12 paddside alignleft">
                     <h2 class="uppercase">Barrier Reef Orchestra - Benefactor's Reel</h2>
                     <ul class="benefitList">
                         <li>Carol Dall'Osto</li>

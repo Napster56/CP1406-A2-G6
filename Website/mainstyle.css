@@ -135,6 +135,7 @@ row::after {
     border-radius: 15px;
     background-color: #fefefe;
     padding-bottom: 10px;
+    margin: 20px;
 }
 
 .uppercase {
@@ -172,6 +173,10 @@ a.link {
 
 h3 {
     margin: 2px;
+}
+
+.padd {
+    padding: 20px 0 20px 0;
 }
 
 .arrowhover a span:after {
@@ -214,6 +219,8 @@ h3 {
     text-shadow: 0 0 10px black;
     text-align: center;
     font-family: 'Pacifico', cursive;
+    border: 1px white solid;
+    border-radius: 15px;
 }
 
 .navbar a:hover {
@@ -242,19 +249,19 @@ h3 {
 .invisiblebtn {
     top: 30px;
     z-index: 0;
-    left: 0;
+    left: -1000px;;
     display: run-in;
+    border: none;
 }
 
 /* header */
 #header {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
+    ;
 }
 
-#header div {
-    margin-top: 10px;
-}
+
 
 .headernav {
     display: inline;
@@ -280,10 +287,6 @@ h3 {
     min-width: 400px;
     padding-left: 10px;
     padding-right: 10px;
-}
-
-.padd {
-    padding: 20px 0 20px 0;
 }
 
 /* Card and modal for artists info */
@@ -443,7 +446,7 @@ h3 {
     text-align: center;
 }
 
-/* Media querries */
+/* ------------------------------------- Media querries -------------------------------- */
 
 @media only screen and (min-width: 1270px) and (min-height: 770px) {
     body {
@@ -475,15 +478,24 @@ h3 {
         float: right;
     }
 
+    .paddside {
+        padding: 0px 70px 0px 70px;
+    }
+
+
     .navbar {
         width: 240px;
         height: 100%;
-        top: 161px;
+        top: 145px;
         z-index: 1;
         position: fixed;
         text-align: left;
         padding-top: 20px;
         margin-left: -10px
+    }
+
+    .navbar a {
+        border: none;
     }
 
     .navbtns {
@@ -496,12 +508,18 @@ h3 {
 
     .invisiblebtn {
         z-index: 1;
+        left: 0px;
     }
 
     #header {
         position: fixed;
         margin-left: -20px;
-        margin-top: -30px;
+        margin-top: -20px;
+    }
+
+    #header div img {
+        position: absolute;
+        margin-top: -50px;
     }
 
     .headernav {
@@ -510,7 +528,7 @@ h3 {
 
     .contentsection {
         margin-left: 250px;
-        margin-top: 142px;
+        margin-top: 130px;
         overflow-y: auto;
         height: 800px;
         padding-left: 50px;

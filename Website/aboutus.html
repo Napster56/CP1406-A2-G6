@@ -20,31 +20,37 @@
 
 <body id="backround-aboutus">
 
-<!-- Grids for entire page -->
-<div class="row">
+  <!-- Grids for entire page -->
+  <div class="row">
 
     <!-- header -->
     <div class="col-12">
-        <div id="header">
-            <div class="row">
-                <!-- Logo -->
-                <div class="col-3 alignleft">
-                    <a href="index.html"><img src="images/logo.png" alt="Go to home"></a>
-                </div>
-                <!-- Call to action -->
-                <div class="col-4 floatright">
-                    <div class="aligncenter">
-                        <button type="button" class="ctaButton" onClick="parent.location='supportus.html'">Support Us
-                        </button>
-                    </div>
-                    <div class="headernav alignright"><a onclick="contactmodal()">Contact Us</a></div>
-                </div>
-                <!-- announcements -->
-                <div class="col-4 floatcenter">
-                    <h1>Bulletin Board</h1>
-                </div>
+      <div id="header">
+      <div class="row">
+          <!-- Logo -->
+          <div class="col-3 alignleft">
+            <div>
+              <a href="index.html"><img src="images/logo.png" alt="Go to home"></a>
             </div>
+            <!-- Buy tickets -->
+          </div>
+            <div class="col-4 aligncenter">
+              <div class="aligncenter"><button class="ctaButton" onclick="https://whatson.townsville.qld.gov.au/events/community-events">Buy tickets</button></div>
+            </div>
+          <!-- Call to action -->
+          <div class="col-4">
+              <div class="aligncenter">
+                <button type="button" class="ctaButton" onClick="parent.location='supportus.html'">Support Us</button>
+              </div>
+            <div class="headernav alignright">
+              <!-- Bulletin board -->
+              <a href="bulletinboard.html">Bulletin Board</a>
+              <!-- Contact us -->
+              <a onclick="contactmodal()">Contact Us</a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Modal for contact info -->
@@ -66,8 +72,7 @@
     <!-- Navigation bar container -->
     <div class="col-nav floatleft">
         <div id="navBox" class="navbar" onclick="closeNav()">
-            <a id="navImg" onclick="closeNav()"><img class="offsetleft" src="images/violinring.png" alt="violin ring">
-                                                     alt="violin ring"></a>    <!-- violin image for navigation bar -->
+            <a id="navImg" onclick="closeNav()"><img class="offsetleft" src="images/violinring.png" alt="violin ring" alt="violin ring"></a>    <!-- violin image for navigation bar -->
             <a id="invisibleBtn" onmouseover="MediaChange(mqw, mqh)" onclick="closeNav()" class="invisiblebtn"
                style="padding: 20px 20px 500px 10px;"></a>        <!-- Invisible button nav bar -->
             <div class="navbtns">
@@ -82,159 +87,176 @@
 
     <!-- Content section -->
     <div class="col-12">
-        <div class="contentsection">
-            <div class="row">
-                <div class="col-8 padd">
-                    <h1>History of the Orchestra</h1>
-                    <p class="alignleft">
-                        Over a two-year period in the late nineties, Townsville musicians, arts workers and a group of
-                        people
-                        who had a love for music realised the potential for developing a community-based Orchestra — one
-                        that
-                        would flourish and become an integral part of the City’s cultural life.
-                    </p>
-                    <p class="alignleft">
-                        In 2000 to ‘test’ the viability of establishing an Orchestra a weekend workshop was arranged and
-                        musicians were invited to participate under the baton of Richard McIntyre, Senior Lecturer at
-                        the
-                        Canberra School of Music and the result — the Barrier Reef Orchestra was born.
-                    </p>
-                    <p class="alignleft">
-                        In a typical year the Barrier Reef Orchestra, under the auspices of North Queensland Ensembles
-                        Inc,
-                        performs three times generally with a guest conductor and occasionally with other performing
-                        groups.
-                        Smaller ensembles, all utilising players from the Orchestra, regularly give concerts — Orpheus
-                        Strings,
-                        Pandanus Winds, Kingfisher Trio, Centenary Concert Band and the Barrier Reef Chamber Orchestra.
-                    </p>
-                    <p class="alignleft">
-                        During the next few years the Orchestra performed with the comedy-duo Scared Weird Little Guys
-                        in Score,
-                        Townsville City Council’s Last Night of the Proms and A Christmas Carol.
-                    </p>
-                </div>
+      <div class="contentsection">
+        <div class="row">
+          <div class="col-12">
+            <h1>History of the Orchestra</h1>
+          </div>
+          <div class="col-12 paddside alignleft">
+              <p>
+                  Over a two-year period in the late nineties, Townsville musicians, arts workers and a group of
+                  people
+                  who had a love for music realised the potential for developing a community-based Orchestra — one
+                  that
+                  would flourish and become an integral part of the City’s cultural life.
+              </p>
+              <p>
+                  In 2000 to ‘test’ the viability of establishing an Orchestra a weekend workshop was arranged and
+                  musicians were invited to participate under the baton of Richard McIntyre, Senior Lecturer at
+                  the
+                  Canberra School of Music and the result — the Barrier Reef Orchestra was born.
+              </p>
+              <p>
+                  In a typical year the Barrier Reef Orchestra, under the auspices of North Queensland Ensembles
+                  Inc,
+                  performs three times generally with a guest conductor and occasionally with other performing
+                  groups.
+                  Smaller ensembles, all utilising players from the Orchestra, regularly give concerts — Orpheus
+                  Strings,
+                  Pandanus Winds, Kingfisher Trio, Centenary Concert Band and the Barrier Reef Chamber Orchestra.
+              </p>
+              <p>
+                  During the next few years the Orchestra performed with the comedy-duo Scared Weird Little Guys
+                  in Score,
+                  Townsville City Council’s Last Night of the Proms and A Christmas Carol.
+              </p>
+          </div>
 
-                <!-- Accordian button container -->
-                <div class="col-8">
-                    <button class="accordion">2015</button>
-                        <div class="panel">
-                    <p>2015 was our 15 year anniversary and featured several concerts that highlighted not only the
-                        enhanced quality of musical performance from the orchestra but an increasing recognition from
-                        our audience, benefactors and the wider community.</p>
-                    <p>In May BRO was asked to perform at the Townsville ARTS Awards, a first for the orchestra, with a
-                        selection from Frozen, not your standard repertoire but well received by the audience and an
-                        indication that the orchestra can is and capable of taking on a diverse range of music. This was
-                        to be a feature in the last 12 months.</p>
-                    <p>August was another first for BRO as were invited to perform at a free public concert as part of
-                        the Australian Festival of Chamber Music. Supported by Townsville City Council and featuring
-                        other ensembles such as 1RAR band and Camerata of St. John’s string ensemble. The performance
-                        culminated in Tchaikovsky’s 1812 Overture Op.49 with a twist. Involving the audience simulating
-                        the cannons with paper bags and car keys…. you had to be there. The audience was in excess of
-                        4000 and proved very popular. So much so we have been invited back for another performance
-                        in 2016. Thank you Justin.</p>
-                    <p>As is often the case rehearsals for the World Music Concert were well under way prior to the AFCM
-                        concert. World Music Concert offered a music tour of the world featuring Adam Lopez (Vocalist),
-                        Domenico Tarraborrelli on Accordion and David Hudson on digeridoo, vocals and guitar.
-                        Audio/Visual was used throughout the concert and several of the arrangements were specifically
-                        written for the performance. As it involved 21 pieces of music and extra musicians for 1RAR and
-                        further afield. Sally our Orchestra Manager had her work cut out for her and I am pleased to say
-                        rose to the challenge. I had the privilege to produce direct and conduct the performance. After
-                        the performance which was well received by the audience, given the letters and feedback we
-                        received, we had a big exhale at completing such a mammoth task.</p>
-                    <p>This concert was hired in by Townsville Civic Theatre, another first for BRO. As was our next
-                        performance which was a collaboration with Dancenorth in their presentation of a unique work
-                        titled Twilight written and directed by Ng Chor Guan an international artist and located on the
-                        headlands of Kissing Point. It involved elements of BRO Brass section performing music in
-                        response to the environment. With no music written it was up the musicians to play given limited
-                        guidelines; certainly a challenge for those of us who are used to using written music. From all
-                        reports it was particularly effective.</p>
-                    <p>Rounding out the year was A Musical Feast in November conducted by Mark Shiell. Mark commented
-                        that he thought the orchestra and improved musically since he last worked with the BRO, pleasing
-                        feedback from professional. A potpourri of music that was enjoyed by all. 2016 was soon upon us
-                        commencing with the launch at the Pier restaurant with a performance from the Strings and a last
-                        minute addition of soprano Siobhan Patrick, a spell binding performance that I think will lead
-                        to further collaborations with her. The launch also allowed me to reinforce our Commitment to
-                        TPAC www.tpac.net.au) while we had the Mayor’s full attention. This continues to be an ongoing
-                        concern that requires all of us to push TPAC forward at every opportunity.</p>
-                        </div>
-                    <button class="accordion">2014</button>
-                        <div class="panel">
-                    <p>The Barrier Reef Orchestra is in a sound financial position with concert attendance and revenue
-                        from tickets up for 2013. The Orchestra performed on six occasions over the last 12 months.</p>
-                    <p>This included a children’s concert at Riverway featuring music from Harry Potter and Peter and
-                        the Wolf. The concert was well received by the audience and the Orchestra got into the mood by
-                        dressing up appropriately for their musical characters.</p>
-                    <p>Masterworks conducted by Mark Sheills and featuring the 2013 Australian Concerto and Vocal
-                        Competition winner was performed in September with a follow up performance in the Burdekin.
-                        Sadly the Burdekin concert was not well attended despite the best efforts in advertising and
-                        extra signage.</p>
-                    <p>Last Night of the Proms was performed in November and conducted by Richard McIntyre. As expected
-                        the audience join in with the antics.</p>
-                        </div>
-                    <button class="accordion">2013</button>
-                        <div class="panel">
-                    <p>In 2013, The Barrier Reef Orchestra staged three successful concerts with a total audience of
-                        1200 patrons.</p>
-                    <p>In March the “Works of Art” concert was a sellout at Riverway. Mussorgsky, Strauss and Haydn with
-                        conductor Mario Dobernig was well received by an appreciative audience.</p>
-                    <p>In August we had the well named “Contrasts” concert with conductor Raymond Yong and a program
-                        varying from Beethoven to Sculthorpe and featuring Elgar’s Cello Concerto with Australian
-                        Concerto and Vocal Competition winner Yoshika Masuda. This concert was also presented at the
-                        Burdekin Theatre, our first performance at another centre for many years. The concert was also
-                        notable for our collaboration with Umbrella Studio and ABC Open which resulted in a photo
-                        artists group forming to produce a video of images to accompany Schulthorpe’s Mangrove.</p>
-                    <p>We provided an ensemble to play at Anzac Park in September as part of the Bandstand Centenary
-                        event and then in October we presented Hats off to Gilbert and Sullivan. This was a quite
-                        demanding production devised and conducted by Richard McIntyre and involved 80 singers from
-                        North Queensland Opera and Music Theatre and Townsville Choral Society. The chorus combined with
-                        a sizable orchestra well and truly filled the Civic stage for what was essentially a Gilbert and
-                        Sullivan tribute show featuring excerpts from three operettas tied together by a narrator.</p>
-                    <p>2013 saw us maintain our membership numbers and our financial position remained strong. We cover
-                        approximately 60% of our expenditure from box office income (which is considered to be very good
-                        by not-for-profit arts organisation standards) and the remainder is covered by grants,
-                        sponsorship and philanthropy.</p>
-                    <p>Over the last five years it has been gratifying to see the Barrier Reef Orchestra make
-                        considerable progress. In 2009 the orchestra was in the doldrums. It was drawing an audience of
-                        150 or less, had less than $10,000 in cash reserves and performed as an orchestra of about 40
-                        players. In fact the mid year concert in 2009 was cancelled because we simply could not muster
-                        the players required for the concert program. We are now drawing a audience of 300 to 400 if not
-                        more, have cash reserves around $70,000 and field an orchestra of 60 to 70 players, depending on
-                        the program.</p>
-                        </div>
-                    <button class="accordion">2012</button>
-                            <div class="panel">
-                    <p>2012 was a very successful year for the orchestra.</p>
-                    <p>We presented three concerts, one at Riverway Arts Centre and two at the Civic Theatre. Each was
-                        well received and well patronized – a total of 1,434 patrons between the three concerts. Not
-                        only is our audience increasing but so also is the orchestra itself – we have many new players
-                        and numbered 65 or more musicians on stage at each concert. Our general membership is also
-                        increasing and perhaps reflecting this trend (and the increasing workload) we now have an
-                        enthusiastic management committee that is twelve strong. The 2012 concert season was very
-                        varied.</p>
-                    <p>The March concert was conducted by our artistic director Richard McIntyre and was Russian themed
-                        – Prokopiev, Rimsky-Korsakov and Tchaikovsky. It featured Edwina George – the 2011 Australian
-                        Concerto and Vocal Competition winner as violin soloist and we also had Sebastien Lipman from
-                        Brisbane on harp.</p>
-                    <p>In August we had our first concert with Mario Dobernig conducting. Mario has been rehearsing the
-                        orchestra for the last couple of days and will conduct the coming March concert and also the two
-                        musical interludes which we have for you today.</p>
-                    <p>The concert last August featured Beethoven’s Emperor Concerto with Raymond Yong on piano and also
-                        the New World Symphony. It was an excellent performance, very well received by the audience who
-                        insisted on an encore.
+          <!-- Accordian button container -->
+            <div class="col-3">
+              <button class="accordion" onclick="openPanel('panel-1')">2015</button>
+            </div>
+            <div class="col-12">
+              <div id="panel-1" class="panel">
+                <p>2015 was our 15 year anniversary and featured several concerts that highlighted not only the
+                    enhanced quality of musical performance from the orchestra but an increasing recognition from
+                    our audience, benefactors and the wider community.</p>
+                <p>In May BRO was asked to perform at the Townsville ARTS Awards, a first for the orchestra, with a
+                    selection from Frozen, not your standard repertoire but well received by the audience and an
+                    indication that the orchestra can is and capable of taking on a diverse range of music. This was
+                    to be a feature in the last 12 months.</p>
+                <p>August was another first for BRO as were invited to perform at a free public concert as part of
+                    the Australian Festival of Chamber Music. Supported by Townsville City Council and featuring
+                    other ensembles such as 1RAR band and Camerata of St. John’s string ensemble. The performance
+                    culminated in Tchaikovsky’s 1812 Overture Op.49 with a twist. Involving the audience simulating
+                    the cannons with paper bags and car keys…. you had to be there. The audience was in excess of
+                    4000 and proved very popular. So much so we have been invited back for another performance
+                    in 2016. Thank you Justin.</p>
                     <p>
-                    <p>The November concert was James Morrison Latin Fiesta. This concert was dreamed up by James
-                        Morrison and conductor Sean O’Boyle but is reworked for each performance and had previously been
-                        performed with the Queensland, Tasmanian and West Australian Orchestras. Our performance is the
-                        only one with a community orchestra. The concert was great fun for both the orchestra and the
-                        large audience. It was also particularly pleasing to welcome ten members of 1RAR band who joined
-                        us as musical partners in this performance.</p>
-                </div>
-                </div>
-                <script src="accordian_button_javascript.js"></script>
-                </div>
-            </div> <!-- Row end -->
-        </div> <!-- Content section end -->
-    </div>
+                      As is often the case rehearsals for the World Music Concert were well under way prior to the AFCM concert. World Music Concert offered a music tour of the world featuring Adam Lopez (Vocalist), Domenico Tarraborrelli on Accordion and David Hudson on digeridoo, vocals and guitar. Audio/Visual was used throughout the concert and several of the arrangements were specifically written for the performance. As it involved 21 pieces of music and extra musicians for 1RAR and
+                      further afield. Sally our Orchestra Manager had her work cut out for her and I am pleased to say
+                      rose to the challenge. I had the privilege to produce direct and conduct the performance. After
+                      the performance which was well received by the audience, given the letters and feedback we
+                      received, we had a big exhale at completing such a mammoth task.
+                    </p>
+                    <p>This concert was hired in by Townsville Civic Theatre, another first for BRO. As was our next
+                    performance which was a collaboration with Dancenorth in their presentation of a unique work
+                    titled Twilight written and directed by Ng Chor Guan an international artist and located on the
+                    headlands of Kissing Point. It involved elements of BRO Brass section performing music in
+                    response to the environment. With no music written it was up the musicians to play given limited
+                    guidelines; certainly a challenge for those of us who are used to using written music. From all
+                    reports it was particularly effective.</p>
+                    <p>Rounding out the year was A Musical Feast in November conducted by Mark Shiell. Mark commented
+                    that he thought the orchestra and improved musically since he last worked with the BRO, pleasing
+                    feedback from professional. A potpourri of music that was enjoyed by all. 2016 was soon upon us
+                    commencing with the launch at the Pier restaurant with a performance from the Strings and a last
+                    minute addition of soprano Siobhan Patrick, a spell binding performance that I think will lead
+                    to further collaborations with her. The launch also allowed me to reinforce our Commitment to
+                    TPAC www.tpac.net.au) while we had the Mayor’s full attention. This continues to be an ongoing
+                    concern that requires all of us to push TPAC forward at every opportunity.</p>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <button class="accordion" onclick="openPanel('panel-2')">2014</button>
+            </div>
+            <div class="col-12">
+              <div id="panel-2"  class="panel">
+                <p>The Barrier Reef Orchestra is in a sound financial position with concert attendance and revenue
+                    from tickets up for 2013. The Orchestra performed on six occasions over the last 12 months.</p>
+                <p>This included a children’s concert at Riverway featuring music from Harry Potter and Peter and
+                    the Wolf. The concert was well received by the audience and the Orchestra got into the mood by
+                    dressing up appropriately for their musical characters.</p>
+                <p>Masterworks conducted by Mark Sheills and featuring the 2013 Australian Concerto and Vocal
+                    Competition winner was performed in September with a follow up performance in the Burdekin.
+                    Sadly the Burdekin concert was not well attended despite the best efforts in advertising and
+                    extra signage.</p>
+                <p>Last Night of the Proms was performed in November and conducted by Richard McIntyre. As expected
+                    the audience join in with the antics.</p>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <button class="accordion" onclick="openPanel('panel-3')">2013</button>
+            </div>
+            <div class="col-12">
+              <div id="panel-3"  class="panel">
+                <p>In 2013, The Barrier Reef Orchestra staged three successful concerts with a total audience of
+                    1200 patrons.</p>
+                <p>In March the “Works of Art” concert was a sellout at Riverway. Mussorgsky, Strauss and Haydn with
+                    conductor Mario Dobernig was well received by an appreciative audience.</p>
+                <p>In August we had the well named “Contrasts” concert with conductor Raymond Yong and a program
+                    varying from Beethoven to Sculthorpe and featuring Elgar’s Cello Concerto with Australian
+                    Concerto and Vocal Competition winner Yoshika Masuda. This concert was also presented at the
+                    Burdekin Theatre, our first performance at another centre for many years. The concert was also
+                    notable for our collaboration with Umbrella Studio and ABC Open which resulted in a photo
+                    artists group forming to produce a video of images to accompany Schulthorpe’s Mangrove.</p>
+                <p>We provided an ensemble to play at Anzac Park in September as part of the Bandstand Centenary
+                    event and then in October we presented Hats off to Gilbert and Sullivan. This was a quite
+                    demanding production devised and conducted by Richard McIntyre and involved 80 singers from
+                    North Queensland Opera and Music Theatre and Townsville Choral Society. The chorus combined with
+                    a sizable orchestra well and truly filled the Civic stage for what was essentially a Gilbert and
+                    Sullivan tribute show featuring excerpts from three operettas tied together by a narrator.</p>
+                <p>2013 saw us maintain our membership numbers and our financial position remained strong. We cover
+                    approximately 60% of our expenditure from box office income (which is considered to be very good
+                    by not-for-profit arts organisation standards) and the remainder is covered by grants,
+                    sponsorship and philanthropy.</p>
+                <p>Over the last five years it has been gratifying to see the Barrier Reef Orchestra make
+                    considerable progress. In 2009 the orchestra was in the doldrums. It was drawing an audience of
+                    150 or less, had less than $10,000 in cash reserves and performed as an orchestra of about 40
+                    players. In fact the mid year concert in 2009 was cancelled because we simply could not muster
+                    the players required for the concert program. We are now drawing a audience of 300 to 400 if not
+                    more, have cash reserves around $70,000 and field an orchestra of 60 to 70 players, depending on
+                    the program.</p>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <button class="accordion" onclick="openPanel('panel-4')">2013</button>
+            </div>
+            <div class="col-12">
+              <div id="panel-4" class="panel">
+                <p>2012 was a very successful year for the orchestra.</p>
+                <p>We presented three concerts, one at Riverway Arts Centre and two at the Civic Theatre. Each was
+                    well received and well patronized – a total of 1,434 patrons between the three concerts. Not
+                    only is our audience increasing but so also is the orchestra itself – we have many new players
+                    and numbered 65 or more musicians on stage at each concert. Our general membership is also
+                    increasing and perhaps reflecting this trend (and the increasing workload) we now have an
+                    enthusiastic management committee that is twelve strong. The 2012 concert season was very
+                    varied.</p>
+                <p>The March concert was conducted by our artistic director Richard McIntyre and was Russian themed
+                    – Prokopiev, Rimsky-Korsakov and Tchaikovsky. It featured Edwina George – the 2011 Australian
+                    Concerto and Vocal Competition winner as violin soloist and we also had Sebastien Lipman from
+                    Brisbane on harp.</p>
+                <p>In August we had our first concert with Mario Dobernig conducting. Mario has been rehearsing the
+                    orchestra for the last couple of days and will conduct the coming March concert and also the two
+                    musical interludes which we have for you today.</p>
+                <p>The concert last August featured Beethoven’s Emperor Concerto with Raymond Yong on piano and also
+                    the New World Symphony. It was an excellent performance, very well received by the audience who
+                    insisted on an encore.
+                <p>
+                <p>The November concert was James Morrison Latin Fiesta. This concert was dreamed up by James
+                    Morrison and conductor Sean O’Boyle but is reworked for each performance and had previously been
+                    performed with the Queensland, Tasmanian and West Australian Orchestras. Our performance is the
+                    only one with a community orchestra. The concert was great fun for both the orchestra and the
+                    large audience. It was also particularly pleasing to welcome ten members of 1RAR band who joined
+                    us as musical partners in this performance.</p>
+              </div>
+            </div>
+
+          </div> <!-- Row end -->
+        </div>
+      </div>
+  </div>
 </body>
 </html>
