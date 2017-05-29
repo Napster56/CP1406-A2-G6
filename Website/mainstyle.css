@@ -436,7 +436,8 @@ h3 {
 
 #signUpTable tr td {
     text-align: left;
-    min-width: 175px;
+    width: 175px;
+    min-width: 75px;
 }
 
 #signUpTable tr #formControls {
