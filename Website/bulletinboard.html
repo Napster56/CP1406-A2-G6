@@ -23,30 +23,35 @@
 <!-- Grids for entire page -->
 <div class="row">
 
-    <!-- header -->
-    <div class="col-12">
-        <div id="header">
-            <div class="row">
-                <!-- Logo -->
-                <div class="col-3 alignleft">
-                    <a href="index.html"><img src="images/logo.png" alt="Go to home"></a>
-                </div>
-                <!-- Call to action -->
-                <div class="col-4 floatright">
-                    <div class="aligncenter">
-                        <button type="button" class="ctaButton" onClick="parent.location='supportus.html'">Support Us
-                        </button>
-                    </div>
-                    <div class="headernav alignright"><a onclick="contactmodal()">Contact Us</a></div>
-                </div>
-                <!-- bulletin board -->
-                <div class="col-4 aligncenter">
-                    <button type="button" class="ctaButton" onClick="parent.location='bulletinboard.html'">Bulletin Board
-                    </button>
-                </div>
-            </div>
+  <!-- header -->
+  <div class="col-12">
+    <div id="header">
+    <div class="row">
+        <!-- Logo -->
+        <div class="col-3 alignleft">
+          <div>
+            <a href="index.html"><img src="images/logo.png" alt="Go to home"></a>
+          </div>
+          <!-- Buy tickets -->
         </div>
+          <div class="col-4 aligncenter">
+            <div class="aligncenter"><button class="ctaButton" onclick="https://whatson.townsville.qld.gov.au/events/community-events">Buy tickets</button></div>
+          </div>
+        <!-- Call to action -->
+        <div class="col-4">
+            <div class="aligncenter">
+              <button type="button" class="ctaButton" onClick="parent.location='supportus.html'">Support Us</button>
+            </div>
+          <div class="headernav alignright">
+            <!-- Bulletin board -->
+            <a href="bulletinboard.html">Bulletin Board</a>
+            <!-- Contact us -->
+            <a onclick="contactmodal()">Contact Us</a>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 
     <!-- Modal for contact info -->
     <div id="contactmodal" class="modal">
@@ -82,147 +87,64 @@
 
     <!-- Content section -->
     <div class="col-12">
-        <div class="contentsection">
-            <div class="row">
-                <div class="col-8 padd">
-                    <h1>Bulletin Board</h1>
-                    <button class="accordion">2017 Committee Nominations</button>
-                    <div class="panel">
-                        <p class="alignleft">
-                            Nominations have been received for the AGM on 21st May 2017.
-                            You can view the nominations
-                            <a class="link"
-                               href="content/AGM-Nominations-2017.pdf">here</a>.
-                            As there are still vacancies, further nominations will be accepted from the floor at the
-                            meeting.
-                        </p>
-                    </div>
-                    <div class="col-10">
-                        <button class="accordion">Notice of 2017 Annual General Meeting</button>
-                        <div class="panel">
-                            <p class="alignleft">
-                                NORTH QUEENSLAND ENSEMBLES INC<br>
-                                BARRIER REEF ORCHESTRA<br>ABN: 73-365-249-138</p>
-                            <p class="alignleft">All members are advised that the Annual General Meeting
-                                (AGM),
-                                of North
-                                Queensland Ensembles Inc will take place at Pimlico Performing Arts
-                                Centre,
-                                Fulham Road, Pimlico
-                                on Sunday 21st May 2017, commencing at 2:00pm. <a class="link"
-                                                                                  href="content/NOTICE-OF-AGM-2017.pdf">Download
-                                    a copy of the AGM notice.</a>
-                            <p class="alignleft">A copy of the agenda can be provided. The following
-                                points should be noted:</p>
-                            <ul class="alignleft">
-                                <li>Membership renewals were due by 31 January 2017. You must be a
-                                    current
-                                    financial member to
-                                    vote on any issue raised at the AGM, to be eligible for nomination
-                                    for
-                                    election to the
-                                    Management Committee and to make such a nomination(s).
-                                </li>
+      <div class="contentsection">
+        <div class="row">
+          <div class="col-12">
+            <h1>History of the Orchestra</h1>
+          </div>
+          <div class="col-12 paddside alignleft">
 
-                                <li>Nominations are called for the positions of President, Vice
-                                    President,
-                                    Secretary, and
-                                    Treasurer and for seven positions of Committee Members. Nomination
-                                    forms are
-                                    enclosed.
-                                    Nominations close on 12th May, 2017 and will be displayed on the
-                                    Association
-                                    web-site,
-                                    (www.nqorchestra.com.au) as from Monday 15th May 2017.
-                                </li>
-                            </ul>
-                            <p class="alignleft">Members are urged to consider making themselves
-                                available for
-                                Committee
-                                membership so that there is a sound level of continuity. <a class="link"
-                                                                                            href="content/2017-AGM-Nomination-and-proxy-forms.pdf">Proxy
-                                    Vote form</a> is also provided. Proxy Votes are to be lodged with
-                                the
-                                Secretary prior to the
-                                commencement of the meeting.</p>
+          </div>
 
-                            <p class="alignleft">All are invited to join in an Open Members’ Forum
-                                immediately
-                                following the formal meeting. If you have any ideas you would like discussed please give
-                                them to the
-                                Secretary.</p>
+          <!-- Accordian button container -->
+            <div class="col-3">
+              <button class="bullten-1" onclick="openPanel('panel-1')">2015</button>
+            </div>
+            <div class="col-12">
+              <div id="panel-1" class="panel">
 
-                            <p class="alignleft">Please send apologies to Secretary (477 96852) or email below:</p>
-                                <a class="link" href="mailto:admin@townsvillemusic.org.au">Send an Email to:</a>admin@townsvillemusic.org.au</p>
-
-
-                            <p class="alignleft">Lorraine Gray-McConnell<br>
-                                Secretary<br>PO Box 576<br>TOWNSVILLE QLD 4810</p>
-                        </div>
-                        <button class="accordion"> Volunteers required!</button>
-                        <div class="panel">
-                            <p class="alignleft">To promote live performances, we must keep production costs to a
-                                minimum.</p>
-                            <p class="alignleft">The Townsville City Council assists us by allowing many tasks to be
-                                done by volunteers.
-                                Most volunteer activities do not require any special skills e.g. setting out or stacking
-                                chairs.</p>
-                            <p class="alignleft">Ushers play a special role, taking tickets at the door and ensuring the
-                                comfort and
-                                safety of all patrons.
-                                A brief, free training session is compulsory for this role, to learn theatre policy,
-                                emergency evacuation procedures, etc.
-                                Ushers are then registered with Civic Theatre management and may work at many theatre
-                                performances throughout the year.
-                            </p>
-                            <p class="alignleft">Please call 4724 2086 if you are interested in taking part in these
-                                rewarding activities.</p>
-                            <p>Posted 9-January-17 </p>
-                        </div>
-                        <button class="accordion">Our Live House Music service</button>
-                        <div class="panel">
-                            <h4 class="alignleft">Performance opportunities for music students.</h4>
-                            <p class="alignleft">The Music Centre have a series of Sunday afternoon concerts at C2 and
-                                Friends of the Theatre have regular variety concerts at Pimlico PAC, also on Sunday
-                                afternoons. Because these venues have no foyer space, the theatre has to be open about
-                                an hour before the concert, so that audience members don't have to stand outside in the
-                                sun, wind, and rain.. </p>
-                            <p class="alignleft">Instead of playing bland recorded music before the show, we prefer to
-                                have student musicians playing on stage when the doors open.
-                                For the musicians, this is effectively a practice session with a live audience; they
-                                don't have to "perform", they can stop and start as they please. They need to be of
-                                reasonably high standard, but they don't have to be polished performers. About 15
-                                minutes before the concert start time, our compere introduces them, acknowledges the
-                                contribution of their school, and the curtain closes. The students are then welcome to
-                                stay for the concert.</p>
-                            <p class="alignleft">The students are considered volunteers, but we can help pay for
-                                expenses incurred.</p>
-                            <p class="alignleft">Small instrumental groups are preferred. The offer is open to all
-                                schools, so we need to schedule in advance.</p>
-                            <p class="alignleft">FOTT have 6 concerts per year, the Music Centre about 10. </p>
-                            <p class="alignleft">If you would like to take part, please let us know so we can send you a
-                                list of concert dates as soon as they are confirmed.</p>
-                            <p class="alignleft">Call us on 4724 2086 or email -</p>
-                            <p>admin@townsvillemusic.org.au </p>
-                            <p>Posted 10-January-17 </p>
-                        </div>
-                        <button class="accordion">TOWNSVILLE EISTEDDFOD - September 2017</button>
-                        <div class="panel">
-                            <h4 class="alignleft">VOLUNTEERS REQUIRED in September 2017</h4>
-                            <p class="alignleft">The Townsville Eisteddford is run entirely by volunteers and we are always ready to welcome new helpers!</p>
-                            <p class="alignleft">If you would like to assist, please call us on 4724 2086 or email -</p>
-                            <p>admin@townsvillemusic.org.au </p>
-                            <p>Posted 10-January-17 </p>
-                        </div>
-
-
-                    </div>
-                </div>
-                <script src="accordian_button_javascript.js"></script>
+              </div>
             </div>
 
-        </div> <!-- Row end -->
-    </div> <!-- Content section end -->
+            <div class="col-3">
+              <button class="bullten-2" onclick="openPanel('panel-2')">2014</button>
+            </div>
+            <div class="col-12">
+              <div id="panel-2"  class="panel">
+
+              </div>
+            </div>
+
+            <div class="col-3">
+              <button class="bullten-3" onclick="openPanel('panel-3')">2013</button>
+            </div>
+            <div class="col-12">
+              <div id="panel-3"  class="panel">
+
+              </div>
+            </div>
+
+            <div class="col-3">
+              <button class="bullten-4" onclick="openPanel('panel-4')">2013</button>
+            </div>
+            <div class="col-12">
+              <div id="panel-4"  class="panel">
+
+              </div>
+            </div>
+
+            <div class="col-3">
+              <button class="bullten-5" onclick="openPanel('panel-5')">2013</button>
+            </div>
+            <div class="col-12">
+              <div id="panel-5"  class="panel">
+
+              </div>
+            </div>
+
+          </div> <!-- Row end -->
+        </div>
+      </div>
 </div>
 </div>
 </body>
