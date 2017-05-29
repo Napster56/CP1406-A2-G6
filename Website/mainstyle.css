@@ -47,7 +47,7 @@ body {
 
 [class*="col-"] {
     text-align: center;
-    display: inline-grid;
+    display: inline-block;
     clear: both;
 }
 
@@ -59,6 +59,10 @@ row::after {
 
 .col-nav {
     width: 100%;
+}
+
+.col-header {
+  min-height: 80px;
 }
 
 .col-1 {
@@ -254,14 +258,64 @@ h3 {
     border: none;
 }
 
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: white;
+    color: rgba(36, 0, 91, 1);
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 18px;
+    margin: 20px;
+    width: 100px;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    transition: 0.4s;
+}
+
+.bulliten {
+    background-color: white;
+    color: rgba(36, 0, 91, 1);
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 18px;
+    margin: 20px;
+    width: 400px;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion.active, button.accordion:hover {
+    background-color: rgba(109, 139, 4, 1);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 18px;
+    margin-left: 10%;
+    align-content: inherit;
+    background-color:white;
+    color: rgba(36, 0, 91, 1);
+    font-size: medium;
+    width: 75%;
+    display: none;
+    border-radius: 15px;
+}
+
 /* header */
 #header {
+    min-height: 140px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     ;
 }
-
-
 
 .headernav {
     display: inline;
@@ -524,6 +578,8 @@ h3 {
     }
 
     .headernav {
+        position: absolute;
+        margin-top: 0px;
         text-align: right;
     }
 
@@ -536,73 +592,10 @@ h3 {
         padding-right: 50px;
     }
 
-    /* Style the buttons that are used to open and close the accordion panel */
-    .accordion {
-        background-color: white;
-        color: rgba(36, 0, 91, 1);
-        font-size: large;
-        font-weight: bold;
-        cursor: pointer;
-        padding: 18px;
-        margin: 20px;
-        width: 100px;
-        text-align: center;
-        border: none;
-        border-radius: 15px;
-        outline: none;
-        transition: 0.4s;
-    }
-
-    .bulliten {
-        background-color: white;
-        color: rgba(36, 0, 91, 1);
-        font-size: large;
-        font-weight: bold;
-        cursor: pointer;
-        padding: 18px;
-        margin: 20px;
-        width: 400px;
-        text-align: center;
-        border: none;
-        border-radius: 15px;
-        outline: none;
-        transition: 0.4s;
-    }
-
-    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-    .accordion.active, button.accordion:hover {
-        background-color: rgba(109, 139, 4, 1);
-    }
-
-    /* Style the accordion panel. Note: hidden by default */
-    .panel {
-        padding: 18px;
-        margin-left: 10%;
-        align-content: inherit;
-        background-color:white;
-        color: rgba(36, 0, 91, 1);
-        font-size: medium;
-        width: 75%;
-        display: none;
-        border-radius: 15px;
-    }
-
-    p.accordion {
-        alignment: center;
-        align-content: center;
-    }
-
     .modal {
         position: absolute;
         margin-top: 170px;
         overflow-y: auto;
         height: 590px;
-    }
-}
-
-@media only screen and (max-width: 1270px) and (min-height: 770px) {
-    .invisiblebtn {
-        left: -500px;
-        display: none;
     }
 }
